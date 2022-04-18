@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./vendor/css/style.css">
+    <link rel="stylesheet" href="./vendor/css/responsive.css">
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="nav">
+            <ul class="nav__list">
+
+                <li class="nav__item">
+                    <a href="#" class="nav__link">
+                        <span class="nav__icon">
+                            <i class='bx bx-data'></i>
+                        </span>
+                        <span class="nav__title"> DashBoard</span>
+                    </a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#" class="nav__link">
+                        <span class="nav__icon">
+                            <i class='bx bx-home'></i>
+                        </span>
+                        <span class="nav__title"> Dashboard</span>
+                    </a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#" class="nav__link">
+                        <span class="nav__icon">
+                            <i class='bx bxs-user-detail'></i>
+                        </span>
+                        <span class="nav__title"> Customers</span>
+                    </a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#" class="nav__link">
+                        <span class="nav__icon">
+                            <i class='bx bx-chat'></i>
+                        </span>
+                        <span class="nav__title"> Message</span>
+                    </a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#" class="nav__link">
+                        <span class="nav__icon">
+                            <i class='bx bx-help-circle'></i>
+                        </span>
+                        <span class="nav__title"> Help</span>
+                    </a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#" class="nav__link">
+                        <span class="nav__icon">
+                            <i class='bx bx-wrench'></i>
+                        </span>
+                        <span class="nav__title"> Settings</span>
+                    </a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#" class="nav__link">
+                        <span class="nav__icon">
+                            <i class='bx bx-lock-alt'></i>
+                        </span>
+                        <span class="nav__title"> Password</span>
+                    </a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#" class="nav__link">
+                        <span class="nav__icon">
+                            <i class='bx bx-log-out'></i>
+                        </span>
+                        <span class="nav__title"> Sign Out</span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+
+
+        <!-- Container -->
+        <div class="container">
+            <div class="topbar">
+                <div class="topbar__toggle">
+                    <i class='bx bx-menu toggle__icon'></i>
+                </div>
+
+                <!-- Search -->
+                <div class="topbar__search">
+                    <label for="" class="topbar__search-label">
+                        <input type="text" placeholder="Search here" class="topbar__search-input">
+                        <i class='bx bx-search topbar__search-icon'></i>
+                    </label>
+                </div>
+
+                <!-- UserImg -->
+                <div class="topbar__user">
+                    <div class="topbar__user-avt">
+                        <img src="./vendor/img/user.jpg" alt="" class="topbar__user-img">
+                    </div>
+                    <div class="topbar__theme">
+                        <i class="bx bx-moon change-theme" id="theme-button"></i>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Cards -->
+            <div class="container__cards">
+
+                <div class="card">
+                    <div>
+                        <div class="card__numbers">1,504</div>
+                        <div class="card__name">Daily Views</div>
+                    </div>
+                    <div class="card__icon">
+                        <i class='bx bx-street-view'></i>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="card__numbers">80</div>
+                        <div class="card__name">Sales</div>
+                    </div>
+                    <div class="card__icon">
+                        <i class='bx bx-cart'></i>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="card__numbers">284</div>
+                        <div class="card__name">Comments</div>
+                    </div>
+                    <div class="card__icon">
+                        <i class='bx bx-chat'></i>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="card__numbers">$7,842</div>
+                        <div class="card__name">Earning</div>
+                    </div>
+                    <div class="card__icon">
+                        <i class='bx bx-dollar'></i>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="details">
+                <!-- details list -->
+
+                <div class="container__detail-order">
+                    <div class="container__detail-header">
+                        <h2 class="section__title">Recent Orders</h2>
+                        <button class="btn">View All</button>
+                    </div>
+                    <div class="container__detail-order__table">
+                        <div class="container__detail-table__title">
+                            <div class="container__detail-table__title-name">Name</div>
+                            <div class="container__detail-table__title-price">Price</div>
+                            <div class="container__detail-table__title-payment">Payment</div>
+                            <div class="container__detail-table__title-status">Status</div>
+                        </div>
+
+                        <div class="container__detail-table__subtitle">
+                            <div class="container__detail-table__subtitle-name">Star Refrigerator</div>
+                            <div class="container__detail-table__subtitle-price">$1200</div>
+                            <div class="container__detail-table__subtitle-payment">Paid</div>
+                            <div class="container__detail-table__subtitle-status">
+                                <span class="delivered">Delivered</span>
+                            </div>
+                        </div>
+
+                        <div class="container__detail-table__subtitle">
+                            <div class="container__detail-table__subtitle-name">A</div>
+                            <div class="container__detail-table__subtitle-price">$1200</div>
+                            <div class="container__detail-table__subtitle-payment">Due</div>
+                            <div class="container__detail-table__subtitle-status">
+                                <span class="pending">Pending</span>
+                            </div>
+                        </div>
+
+                        <div class="container__detail-table__subtitle">
+                            <div class="container__detail-table__subtitle-name">AA</div>
+                            <div class="container__detail-table__subtitle-price">$1100</div>
+                            <div class="container__detail-table__subtitle-payment">Paid</div>
+                            <div class="container__detail-table__subtitle-status">
+                                <span class="return">Return</span>
+                            </div>
+                        </div>
+
+                        <div class="container__detail-table__subtitle">
+                            <div class="container__detail-table__subtitle-name">AB</div>
+                            <div class="container__detail-table__subtitle-price">$800</div>
+                            <div class="container__detail-table__subtitle-payment">Paid</div>
+                            <div class="container__detail-table__subtitle-status ">
+                                <span class="progress">In Progress</span>
+                            </div>
+                        </div>
+
+                        <div class="container__detail-table__subtitle">
+                            <div class="container__detail-table__subtitle-name">AAB</div>
+                            <div class="container__detail-table__subtitle-price">$1200</div>
+                            <div class="container__detail-table__subtitle-payment">Due</div>
+                            <div class="container__detail-table__subtitle-status">
+                                <span class="delivered">Delivered</span>
+                            </div>
+                        </div>
+
+                        <div class="container__detail-table__subtitle">
+                            <div class="container__detail-table__subtitle-name">ABB</div>
+                            <div class="container__detail-table__subtitle-price">$789</div>
+                            <div class="container__detail-table__subtitle-payment">Paid</div>
+                            <div class="container__detail-table__subtitle-status">
+                                <span class="pending">Pending</span>
+                            </div>
+                        </div>
+
+                        <div class="container__detail-table__subtitle">
+                            <div class="container__detail-table__subtitle-name">AABB</div>
+                            <div class="container__detail-table__subtitle-price">$479</div>
+                            <div class="container__detail-table__subtitle-payment">Due</div>
+                            <div class="container__detail-table__subtitle-status">
+                                <span class="return">Return</span>
+                            </div>
+                        </div>
+
+                        <div class="container__detail-table__subtitle">
+                            <div class="container__detail-table__subtitle-name">ABC</div>
+                            <div class="container__detail-table__subtitle-price">$800</div>
+                            <div class="container__detail-table__subtitle-payment">Due</div>
+                            <div class="container__detail-table__subtitle-status ">
+                                <span class="progress">In Progress</span>
+                            </div>
+                        </div>
+
+                        <div class="container__detail-table__subtitle">
+                            <div class="container__detail-table__subtitle-name">AABC</div>
+                            <div class="container__detail-table__subtitle-price">$265</div>
+                            <div class="container__detail-table__subtitle-payment">Due</div>
+                            <div class="container__detail-table__subtitle-status">
+                                <span class="pending">Pending</span>
+                            </div>
+                        </div>
+
+                        <div class="container__detail-table__subtitle">
+                            <div class="container__detail-table__subtitle-name">AABBC</div>
+                            <div class="container__detail-table__subtitle-price">$159</div>
+                            <div class="container__detail-table__subtitle-payment">Paid</div>
+                            <div class="container__detail-table__subtitle-status">
+                                <span class="pending">Pending</span>
+                            </div>
+                        </div>
+
+                        <div class="container__detail-table__subtitle">
+                            <div class="container__detail-table__subtitle-name">AABBCC</div>
+                            <div class="container__detail-table__subtitle-price">$110</div>
+                            <div class="container__detail-table__subtitle-payment">Due</div>
+                            <div class="container__detail-table__subtitle-status ">
+                                <span class="progress">In Progress</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- New Customer -->
+
+                <div class="container__detail-customer">
+                    <div class="container__detail-header">
+                        <h2 class="section__title">Recent Orders</h2>
+                    </div>
+
+                    <div class="container__detail-customer__item">
+                        <div class="container__detail-customer__avt">
+                            <img src="./vendor/img/img1.jpg" alt="" class="customer__img">
+                        </div>
+                        <div class="container__detail-customer__info">
+                            <div class="container__detail-customer__title">David</div>
+                            <div class="container__detail-customer__subtitle">Italy</div>
+                        </div>
+                    </div>
+
+                    <div class="container__detail-customer__item">
+                        <div class="container__detail-customer__avt">
+                            <img src="./vendor/img/img2.jpg" alt="" class="customer__img">
+                        </div>
+                        <div class="container__detail-customer__info">
+                            <div class="container__detail-customer__title">David</div>
+                            <div class="container__detail-customer__subtitle">Italy</div>
+                        </div>
+                    </div>
+
+                    <div class="container__detail-customer__item">
+                        <div class="container__detail-customer__avt">
+                            <img src="./vendor/img/img3.jpg" alt="" class="customer__img">
+                        </div>
+                        <div class="container__detail-customer__info">
+                            <div class="container__detail-customer__title">Amelia</div>
+                            <div class="container__detail-customer__subtitle">France</div>
+                        </div>
+                    </div>
+
+                    <div class="container__detail-customer__item">
+                        <div class="container__detail-customer__avt">
+                            <img src="./vendor/img/img4.jpg" alt="" class="customer__img">
+                        </div>
+                        <div class="container__detail-customer__info">
+                            <div class="container__detail-customer__title">Olivia</div>
+                            <div class="container__detail-customer__subtitle">USA</div>
+                        </div>
+                    </div>
+
+                    <div class="container__detail-customer__item">
+                        <div class="container__detail-customer__avt">
+                            <img src="./vendor/img/img5.jpg" alt="" class="customer__img">
+                        </div>
+                        <div class="container__detail-customer__info">
+                            <div class="container__detail-customer__title">Amit</div>
+                            <div class="container__detail-customer__subtitle">Japan</div>
+                        </div>
+                    </div>
+
+                    <div class="container__detail-customer__item">
+                        <div class="container__detail-customer__avt">
+                            <img src="./vendor/img/img6.jpg" alt="" class="customer__img">
+                        </div>
+                        <div class="container__detail-customer__info">
+                            <div class="container__detail-customer__title">Ashraf</div>
+                            <div class="container__detail-customer__subtitle">India</div>
+                        </div>
+                    </div>
+
+                    <div class="container__detail-customer__item">
+                        <div class="container__detail-customer__avt">
+                            <img src="./vendor/img/img7.jpg" alt="" class="customer__img">
+                        </div>
+                        <div class="container__detail-customer__info">
+                            <div class="container__detail-customer__title">Diana</div>
+                            <div class="container__detail-customer__subtitle">Malaysia</div>
+                        </div>
+                    </div>
+
+                    <div class="container__detail-customer__item">
+                        <div class="container__detail-customer__avt">
+                            <img src="./vendor/img/img8.jpg" alt="" class="customer__img">
+                        </div>
+                        <div class="container__detail-customer__info">
+                            <div class="container__detail-customer__title">Amit</div>
+                            <div class="container__detail-customer__subtitle">India</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="./vendor/js/script.js"></script>
+</body>
+
+</html>

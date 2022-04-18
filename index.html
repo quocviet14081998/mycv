@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Info</title>
+
+    <!--==================== UNICONS ====================-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!-- ----------------BOXICON-------------- -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="./vendor/css/swiper-bundle.min.css">
+
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="./vendor/css/style.css">
+
+    <!--==================== REPONSIVE ====================-->
+    <link rel="stylesheet" href="./vendor/css/responsive.css">
+</head>
+
+<body>
+    <header class="header" id="header">
+        <div class="nav container">
+            <a href="#" class="nav__logo">Quốc Việt</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class='bx bx-home-alt nav__icon'></i> Home
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">
+                            <i class='bx bx-user nav__icon'></i> About
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class='bx bx-file nav__icon'></i> Skills
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#qualification" class="nav__link">
+                            <i class='bx bx-briefcase-alt-2 nav__icon'></i> Qualification
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#work" class="nav__link">
+                            <i class='bx bx-image-alt nav__icon'></i> Work
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class='bx bxs-phone nav__icon'></i> Contact
+                        </a>
+                    </li>
+                </ul>
+                <i class='bx bx-x nav__close' id="nav-close"></i>
+            </div>
+
+            <div class="nav__btns">
+                <i class='bx bx-moon change-theme' id="theme-button"></i>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bxs-caret-up-square'></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <!-- ---------------- HOME ---------------- -->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__content grid">
+
+                    <div class="home__handle">
+                        <img src="./vendor/img/avata.png" alt="" class="home__img">
+                    </div>
+
+                    <div class="home__data">
+                        <h1 class="home__title">Xin Chào! Mình là Lưu Quốc Việt</h1>
+                        <h3 class="home__subtitle">Fresher FrontEnd</h3>
+                        <p class="home__description">
+                            <span>Ngày Sinh: 14/08/1998.</span>
+                            <span>Số Điện Thoại: 070****851</span>
+                            <span>Email: quocviet14081998@gmail.com.</span>
+                            <span>Địa Chỉ: Tân Phú, TPHCM.</span>
+                        </p>
+
+                        <div class="home__social">
+                            <a href="http://www.linkedin.com/" target="_blank" class="home__social-icon">
+                                <i class='bx bxl-linkedin'></i>
+                            </a>
+
+                            <a href="http://www.facebook.com/" target="_blank" class="home__social-icon">
+                                <i class='bx bxl-facebook-circle'></i>
+                            </a>
+
+                            <a href="http://www.github.com/" target="_blank" class="home__social-icon">
+                                <i class='bx bxl-github'></i>
+                            </a>
+                        </div>
+
+                        <div class="home__download">
+                            <a href="#contact" download="./vendor/pdf/QuocViet-Cv.pdf" class="button button--flex">
+                                Download CV <i class='bx bx-down-arrow-alt button__icon'></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="home__scroll">
+                    <a href="#about" class="home__scroll-button button--flex">
+                        <i class='bx bx-mouse home__scroll-mouse'></i>
+                        <span class="home__scroll-name">Scroll down</span>
+                        <i class='bx bx-down-arrow-alt home__scroll-arrow'></i>
+
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ----------------ABOUT-------------- -->
+        <section class="about section" id="about">
+            <h2 class="section__title">Thông Tin Của Tôi</h2>
+
+            <div class="about__container container grid">
+                <img src="./vendor/img/about.jpg" alt="" class="about__img">
+
+                <div class="about__data">
+                    <div class="about__info">
+                        <div class="about__box">
+                            <i class='bx bx-award about__icon'></i>
+                            <h3 class="about__title">Học Vấn</h3>
+                            <span class="about__subtitle">4 Năm học tại trường Đại Học Mở TPHCM</span>
+                        </div>
+
+                        <div class="about__box">
+                            <i class='bx bx-briefcase-alt about__icon'></i>
+                            <h3 class="about__title">Dự Án</h3>
+                            <span class="about__subtitle">Mình đã hoàn thành 5+ Dự Án</span>
+                        </div>
+
+                        <div class="about__box">
+                            <i class='bx bx-support about__icon'></i>
+                            <h3 class="about__title">Kinh Nghiệm</h3>
+                            <span class="about__subtitle">Mình có 6 tháng hỗ trợ và làm việc với các Thầy, Cô/ Anh, chị
+                                khóa trên</span>
+                        </div>
+                    </div>
+
+                    <p class="about__description">
+                        Mình là một sinh viên của trường đại học Mở Thành Phố Hồ Chí Minh. Mình đang học tập, theo đuổi
+                        ngành Công Nghệ Thông Tin. <br>
+                        Hiện tại mình đang theo học khóa học tại F8, đã được gần 1 năm theo đuổi lập trình Web và mình
+                        đã tạo ra được một vài trang web, mình cảm thấy rất thích các trang web mà mình đã viết nên
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ----------------SKILLS-------------- -->
+        <section class="skills section" id="skills">
+            <h2 class="section__title"> Kỹ Năng Của Tôi</h2>
+
+            <div class="skills__container container grid">
+                <div class="skills__content">
+                    <h3 class="skills__title">Kỹ Năng FrontEnd</h3>
+
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">HTML</h3>
+                                    <span class="skills__level">Basic</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">CSS</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">JavaScript</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Boostrap</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ----------------QUALIFICATION-------------- -->
+        <section class="qualification section" id="qualification">
+            <h2 class="section__title">Trình Độ Học Vấn Của Tôi</h2>
+            <div class="qualification__container container">
+
+                <div class="qualification__tabs">
+                    <div class="qualification__button button--flex qualification__active" data-target="#education">
+                        <i class='bx bxs-school qualification__icon'></i>
+                        Trường Học
+                    </div>
+                </div>
+
+
+                <div class="qualification__sections">
+
+                    <!-- ----------------QUALIFICATION CONTENT 1-------------- -->
+                    <div class="qualification__content qualification__active" data-content id="education">
+
+                        <!--==================== QUALIFICATION 1 ====================-->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Trường Tiểu Học</h3>
+                                <span class="qualification__subtitle">Võ Thị Sáu</span>
+                                <div class="qualification__calendar">
+                                    <i class='bx bxs-calendar'></i>
+                                    2002 - 2007
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+
+                        <!--==================== QUALIFICATION 2 ====================-->
+                        <div class="qualification__data">
+                            <div></div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+
+                            <div>
+                                <h3 class="qualification__title">Trường THCS</h3>
+                                <span class="qualification__subtitle">Đồng Khởi</span>
+                                <div class="qualification__calendar">
+                                    <i class='bx bxs-calendar'></i>
+                                    2008 - 2012
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--==================== QUALIFICATION 3 ====================-->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Trường THPT</h3>
+                                <span class="qualification__subtitle">Trần Quang Khải</span>
+                                <div class="qualification__calendar">
+                                    <i class='bx bxs-calendar'></i>
+                                    2013 - 2015
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+
+                        <!--==================== QUALIFICATION 4 ====================-->
+                        <div class="qualification__data">
+                            <div></div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <!-- <span class="qualification__line"></span> -->
+                            </div>
+
+                            <div>
+                                <h3 class="qualification__title">Trường Đại Học</h3>
+                                <span class="qualification__subtitle">Mở TPHCM</span>
+                                <div class="qualification__calendar">
+                                    <i class='bx bxs-calendar'></i>
+                                    2016 - Nay
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ----------------WORK-------------- -->
+        <section class="work section" id="work">
+            <h2 class="section__title">Dự Án Của Tôi</h2>
+
+            <div class="work__filters">
+                <span class="work__item active-work" data-filter="all">All</span>
+                <span class="work__item" data-filter=".shoppe">Shoppe</span>
+                <span class="work__item" data-filter=".pageone">Page One</span>
+                <span class="work__item" data-filter=".dashboard">Dashboard</span>
+                <span class="work__item" data-filter=".todolist">TodoList</span>
+            </div>
+
+            <div class="work__container container grid">
+                <div class="work__card mix shoppe">
+                    <img src="./vendor/img/Shoppe.png" alt="" class="work__img">
+
+                    <h3 class="work__title">Clone Shoppe</h3>
+
+                    <a href="./Shop/index.html" class="work__button" target="_blank">
+                        Demo <i class='bx bx-right-arrow-alt work__icon'></i>
+                    </a>
+                </div>
+
+                <div class="work__card mix pageone">
+                    <img src="./vendor/img/bandTemplate.png" alt="" class="work__img">
+
+                    <h3 class="work__title">Band Template</h3>
+
+                    <a href="./TheBandTemplate/index.html" class="work__button" target="_blank">
+                        Demo <i class='bx bx-right-arrow-alt work__icon'></i>
+                    </a>
+                </div>
+
+                <div class="work__card mix pageone">
+                    <img src="./vendor/img/travelTemplate.png" alt="" class="work__img">
+
+                    <h3 class="work__title">Travel Template</h3>
+
+                    <a href="./TravelTemplate/index.html" class="work__button" target="_blank">
+                        Demo <i class='bx bx-right-arrow-alt work__icon'></i>
+                    </a>
+                </div>
+
+                <div class="work__card mix pageone">
+                    <img src="./vendor/img/bakoneTemplate.png" alt="" class="work__img">
+
+                    <h3 class="work__title">BakOne Template</h3>
+
+                    <a href="./BakOneTemplate/index.html" class="work__button" target="_blank">
+                        Demo <i class='bx bx-right-arrow-alt work__icon'></i>
+                    </a>
+                </div>
+
+                <div class="work__card mix dashboard">
+                    <img src="./vendor/img/dashBoard.png" alt="" class="work__img">
+
+                    <h3 class="work__title">Dashboard</h3>
+
+                    <a href="./Dashboard/index.html" class="work__button" target="_blank">
+                        Demo <i class='bx bx-right-arrow-alt work__icon'></i>
+                    </a>
+                </div>
+
+                <div class="work__card mix todolist">
+                    <img src="./vendor/img/todoList.png" alt="" class="work__img">
+
+                    <h3 class="work__title">Dashboard</h3>
+
+                    <a href="./TodoList/index.html" class="work__button" target="_blank">
+                        Demo <i class='bx bx-right-arrow-alt work__icon'></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ----------------TESTIMONIALS-------------- -->
+        <section class="testimonial section">
+            <h2 class="section__title">Câu Nói Tạo Động Lực Cho Tôi</h2>
+
+            <div class="testimonial__container container swiper ">
+                <div class="swiper-wrapper">
+                    <div class="testimonial__card swiper-slide">
+                        <img src="./vendor/img/testimonial1.jpg" alt="" class="testimonial__img">
+
+                        <h3 class="testimonial__name">Steve Jobs</h3>
+                        <p class="testimonial__description">
+                            Thời gian của mỗi chúng ta là có hạn. Vì thế đừng dùng nó để sống cuộc đời của một ai khác.
+                        </p>
+                    </div>
+
+                    <div class="testimonial__card swiper-slide">
+                        <img src="./vendor/img/testimonial2.jpg" alt="" class="testimonial__img">
+
+                        <h3 class="testimonial__name">Elon Musk</h3>
+                        <p class="testimonial__description">
+                            Tối nghĩ rằng một người bình thường hoàn toàn có thể lựa chọn trờ nên phi thường.
+                        </p>
+                    </div>
+
+                    <div class="testimonial__card swiper-slide">
+                        <img src="./vendor/img/testimonial3.jpg" alt="" class="testimonial__img">
+
+                        <h3 class="testimonial__name">Jeff Bezos</h3>
+                        <p class="testimonial__description">
+                            Nếu thất bại, tôi sẽ không hối hận về điều đó nhưng tôi biết mình có thể sẽ hối hận nếu
+                            không thử.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+
+            </div>
+        </section>
+
+        <!-- ----------------CONTACT-------------- -->
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Thông Tin Liên Lạc Của Tôi</h2>
+
+            <div class="contact__container container grid">
+                <div class="contact__content">
+                    <h3 class="contact__title">Liên Lạc Với Tôi</h3>
+
+                    <div class="contact__info">
+                        <div class="contact__card">
+                            <i class='bx bx-mail-send contact__card-icon'></i>
+                            <h3 class="contact__card-title">Email</h3>
+                            <span class="contact__card-data">quocviet14081998@gmail.com</span>
+
+                            <a href="mailto:quocviet14081998@gmail.com" target="_blank" class="contact__button">
+                                Write me <i class='bx bx-right-arrow-alt contact__button-icon'></i>
+                            </a>
+                        </div>
+
+                        <div class="contact__card">
+                            <i class='bx bxl-whatsapp contact__card-icon'></i>
+                            <h3 class="contact__card-title">Số Điện Thoại</h3>
+                            <span class="contact__card-data">070****851</span>
+
+                            <a href="http://api.whatsapp.com/send?phone=0789301887&text=Hello, more infomation!"
+                                target="_blank" class="contact__button">
+                                Write me <i class='bx bx-right-arrow-alt contact__button-icon'></i>
+                            </a>
+                        </div>
+
+                        <div class="contact__card">
+                            <i class='bx bxl-messenger contact__card-icon'></i>
+                            <h3 class="contact__card-title">Messenger</h3>
+                            <span class="contact__card-data">Quốc Việt</span>
+
+                            <a href="http://m.me/username" target="_blank" class="contact__button">
+                                Write me <i class='bx bx-right-arrow-alt contact__button-icon'></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact__content">
+                    <h3 class="contact__title">Gửi Mail Cho Tôi</h3>
+
+                    <form action="" class="contact__form">
+                        <div class="contact__form-div">
+                            <lable class="contact__form-tag">Tên Của Bạn</lable>
+                            <input type="text" placeholder="Nhập Tên Của Bạn" class="contact__form-input">
+                        </div>
+
+                        <div class="contact__form-div">
+                            <lable class="contact__form-tag">Mail Của Bạn</lable>
+                            <input type="email" placeholder="Nhập Email Của Bạn" class="contact__form-input">
+                        </div>
+
+                        <div class="contact__form-div contact__form-area">
+                            <lable class="contact__form-tag">Nội Dung</lable>
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Bạn cần gửi gì cho tôi?"
+                                class="contact__form-input"></textarea>
+                        </div>
+
+                        <button class="button">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ----------------FOOTER-------------- -->
+    <footer class="footer">
+        <div class="footer__container container">
+            <h1 class="footer__title">Quốc Việt</h1>
+
+            <ul class="footer__list">
+                <li>
+                    <a href="#about" class="footer__link">Thông Tin Của Tôi</a>
+                </li>
+
+                <li>
+                    <a href="#skills" class="footer__link">Kỹ Năng Của Tôi</a>
+                </li>
+
+                <li>
+                    <a href="#work" class="footer__link">Dự Án Của Tôi</a>
+                </li>
+            </ul>
+
+            <ul class="footer__social">
+                <a href="http://facebook.com/" target="_blank" class="footer__social-link">
+                    <i class='bx bxl-facebook'></i>
+                </a>
+
+                <a href="http://instagram.com/" target="_blank" class="footer__social-link">
+                    <i class='bx bxl-instagram'></i>
+                </a>
+
+                <a href="http://twitter.com/" target="_blank" class="footer__social-link">
+                    <i class='bx bxl-twitter'></i>
+                </a>
+            </ul>
+
+            <span class="footer__copy">
+                &#169; QuocViet. All rights reserved
+            </span>
+        </div>
+    </footer>
+
+
+    <!-- ----------------SCROLLREVEAL-------------- -->
+    <script src="./vendor/js/scrollreveal.min.js"></script>
+
+    <!-- ----------------SWIPER JS-------------- -->
+    <script src="./vendor/js/swiper-bundle.min.js"></script>
+
+    <!-- ----------------MIXITUP FILTER-------------- -->
+    <script src="./vendor/js/mixitup.min.js"></script>
+
+    <!-- ----------------MAIN JS-------------- -->
+    <script src="./vendor/js/script.js"></script>
+</body>
+
+</html>

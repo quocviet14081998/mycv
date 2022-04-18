@@ -1,0 +1,391 @@
+/*f5 là lấy dữ liệu trên két , còn Ctrl + f5 là bắt buộc lấy dữ liệu trên sv*/
+body {
+	max-width: 1020px;
+	margin:auto;
+}
+
+/*Define fonts*/
+@font-face {
+	font-family: Lato-Regular;
+	src:url("../font/Lato/Lato-Regular.ttf");
+}
+
+@font-face {
+	font-family: Lato-Bold;
+	src:url("../font/Lato/Lato-Bold.ttf");
+}
+
+@font-face {
+	font-family: Lato-Italic;
+	src:url("../font/Lato/Lato-Italic.ttf");
+}
+
+@font-face {
+	font-family: Lato-Light;
+	src:url("../font/Lato/Lato-Light.ttf");
+}
+
+/*HEADER*/
+header .navbar-light .navbar-nav .nav-link {
+	color: #444;
+	font-family: Lato-Regular;
+	font-size: 14px;
+	margin-left:3px;
+	margin-right: 3px;
+	padding-left:12px;
+	padding-right: 12px;
+}
+
+header .navbar-light .navbar-nav .nav-link.active, 
+header .navbar-light .navbar-nav .nav-link:hover {
+	background-color: #1bbc9b;
+	color: #fff;
+}
+
+header .navbar {
+	padding-top:19px;
+	padding-bottom: 19px;
+}
+
+header nav .container-fluid {
+	max-width: 1020px;
+}
+
+header .navbar.fixed-top {
+	background-color: rgba(255,255,0,0.8);
+	padding-top:0;
+	padding-bottom: 0;
+	animation: 1s menuAnimation;
+}
+
+@keyframes menuAnimation {
+	from {
+		opacity: 0;
+		transform: translateY(-100%);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.dummy-padding{
+	padding-top: 95px;
+}
+
+@media only screen and (max-width: 992px) {
+	header .navbar-light .navbar-nav .nav-link {
+		margin-left:0;
+		margin-right: 0;
+		margin-top:3px;
+		margin-bottom:3px;
+	}
+
+	header .navbar-collapse {
+		position: absolute;
+		top:100%;
+		width:100%;
+		left:0;
+		background-color: rgba(128,128,128, 0.8);
+	}
+
+	header .navbar {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+
+	.dummy-padding{
+		padding-top: 57px;
+	}
+
+}
+
+
+
+/*home*/
+main .home {
+	padding-top:71px;
+	padding-bottom: 82px;
+	background-image: url("../images/banner.jpg");
+	background-size: cover;
+	background-position: center;
+	color: #fff;
+	font-family: Lato-Light;
+}
+
+main .home h1 {
+	font-size: 55px;
+	margin-bottom: 29px;
+}
+
+main .home h1 strong {
+	font-family: Lato-Bold;
+}
+
+main .home p {
+	font-size: 18px;
+	max-width: 576px;
+	margin:auto;
+	margin-bottom: 47px;
+}
+
+main button:not(header button) {
+	color: #fff;
+	background-color: #1bbc9b;
+	font-family: Lato-Bold;
+	font-size: 13px;
+	padding:12px;
+	border: none;
+	letter-spacing: 2px;
+	margin-bottom: 42px;
+}
+
+/*Portfolio*/
+main .portfolio {
+	padding-top: 51px;
+	padding-bottom: 27px;  /*61px - 34px*/
+	font-family: Lato-Regular;
+	color: #444;
+	max-width: 954px;
+} 
+
+main .portfolio h2 {
+	font-size: 28px;
+	margin-bottom: 11px;
+}
+
+main .portfolio p {
+	font-size: 16px;
+	margin-bottom: 36px;
+}
+
+main .portfolio button {
+	margin-left:8px;
+	margin-right:8px;
+	margin-bottom: 45px;
+}
+
+main .portfolio .box{
+	display: inline-block; /*xét để width bung ra theo nội dung*/
+	position: relative;
+	margin-bottom: 34px;
+}
+
+main .portfolio .box .overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: url(../images/background.png);
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	display: flex; /*thẻ display , align-items và justify-content đi chung*/
+	align-items: center; /*xét theo chiều ngang*/
+	justify-content: center; /*xét theo chiều dọc*/
+	color: #fff;
+	transform: scale(0);
+	transition: ease 1s; /*thuộc tính transition đặt ở trạng thái lúc đầu, không được đặt ở trạng thái cuối*/
+}
+main .portfolio .box:hover .overlay{
+	transform: scale(1);
+}
+
+main .portfolio .box span:nth-of-type(1){
+	font-size: 21px;
+	margin-bottom: 19px;
+	display: inline-block;
+	width: 44px;
+	line-height: 44px;
+	background-image: url(../images/icon.png);
+	/*background-size: cover;*/
+	border-radius: 50%;
+}
+
+main .portfolio .box span:nth-of-type(2){
+	font-size: 18px;
+	margin-bottom: 10px;
+	display: inline-block;
+}
+
+main .portfolio .box span:nth-of-type(3){
+	font-size: 14px;
+}
+/*about*/
+main .about {
+	padding-top:53px;
+	padding-bottom: 54px;  /*74px - 20px*/
+	background-color: #16a086;
+	color: #fff;
+	font-family: Lato-Regular;
+	
+}
+
+main .about .container-fluid {
+	max-width: 840px;
+}
+
+main .about h2 {
+	font-size: 28px;
+	margin-bottom: 11px;
+}
+
+main .about .container-fluid > p {
+	font-size: 14px;
+	margin-bottom: 44px; 
+}
+
+main .about .box-card{
+	position: relative;
+
+}
+
+main .about .box-card .overlay{
+	position: absolute; /*thuộc tính position: absolute; không được tính vào chiều cao thằng cha*/
+	background-image: url(../images/background.png);
+	top: 50%; /*thuộc tính top và left xài khi nó không đè hết hình*/
+	left: 50%;
+	transform: translate(-50%, -50%) scale(0);
+	width: 180px;
+	/*line-height: 48px;*/ /*line-height không dùng được trong display: flex , phải dùng height*/
+	font-size: 29px;
+	display: flex;
+	justify-content: space-around;
+	/*justify-content: space-between-- thuộc tính không tính 2 đầu right left*/
+	height: 48px;
+	align-items: center;
+	transition: ease 1s;
+}
+
+main .about .box-card:hover .overlay{
+	transform: translate(-50%, -50%) scale(1);
+}
+
+main .about .box-card .overlay a{
+	color: #fff;
+}
+
+main .about .box {
+	background-color: #fff;
+	color: #444;
+	width: 220px;
+	margin:auto;
+	padding-top:19px;
+	padding-bottom: 19px;
+	margin-bottom: 20px;
+}
+
+main .about .box h3 {
+	font-size:18px;
+	margin-bottom: 4px;
+}
+
+main .about .box span {
+	font-size: 14px;
+	font-family: Lato-Italic;
+	margin-bottom: 18px;
+	display: inline-block; /*để set được margin-bottom*/
+}
+
+main .about .box p {
+	font-size: 14px;
+	line-height: 19px;
+	padding-left:10px;
+	padding-right: 10px;
+	text-align: left;
+}
+
+/*contact*/
+main .contact {
+	padding-top: 49px;
+	padding-bottom: 61px;
+	background-color: #ecf0f1;
+	font-family: Lato-Regular;
+	color: #444;
+}
+
+main .contact h2 {
+	font-size: 28px;
+	margin-bottom: 12px;
+}
+
+main .contact > p {
+	font-size: 14px;
+	margin-bottom: 51px;
+}
+
+main .contact input {
+	height: 47px;
+	border:2px solid #bec3c7;
+	border-radius: 0;
+	margin-bottom: 22px;
+}
+
+main .contact textarea {
+	height: 153px;
+	border:2px solid #bec3c7;
+	border-radius: 0;
+	margin-bottom: 23px;
+}
+
+main .contact ::placeholder {
+	font-family: Lato-Italic;
+	color: #999;
+}
+
+main .contact button {
+	padding-left: 29px;
+	padding-right: 29px;
+}
+
+main .contact h3 {
+	font-size: 14px;
+	margin-bottom: 20px;
+	margin-top:-3px;
+}
+
+main .contact address {
+	font-size: 14px;
+	margin-bottom: 24px;
+
+}
+
+main .contact address ~ p {
+	font-size: 14px;
+	margin-bottom: 18px;
+}
+
+main .contact address i {
+	margin-right: 5px;
+}
+
+main .contact address p {
+	margin-top: -3px;
+	margin-bottom: 0;
+}
+
+/*footer*/
+footer {
+	background-color: #2d3e50;
+	color: #fff;
+	line-height: 87px;
+	font-family: Lato-Regular;
+	font-size: 14px;
+}
+
+footer .back-to-top {
+	color: #fff;
+	background-color: #1bbc9b;
+	width: 44px;
+	line-height: 44px;
+	display: inline-block;
+	text-align: center;
+	position: fixed;
+	bottom: 22px;
+	right: 22px;
+	font-size: 20px;
+}
+
+button.active{
+	background-color: yellow;
+	color: red;
+}

@@ -1,0 +1,530 @@
+/* ------------------------------ Font ------------------------------  */
+
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+
+/* ------------------------------ Variable ------------------------------  */
+
+:root {
+  --blue: #287bff;
+  --background: #fff;
+  --grey: #f5f5f5;
+  --text-1: #222;
+  --text-2: #999;
+  --box: rgba(0, 0, 0, 0.08);
+  --dark: #000;
+}
+
+/* ------------------------------ Base  ------------------------------  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+body {
+  background-color: var(--background);
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-size: 16px;
+}
+
+/* ------------------------------ Dark / Light ------------------------------  */
+body.dark-theme {
+  --blue: #b3c7e8;
+  --background: #0f3577;
+  --text-1: rgb(255, 255, 255);
+  --text-2: rgb(255, 250, 250);
+  --box: #71a0ec;
+  --dark: #71a0ec;
+}
+
+/* ------------------------------ Main ------------------------------  */
+
+.main {
+  position: relative;
+  width: 100%;
+}
+
+/* ------------------------------ Nav ------------------------------  */
+
+.nav {
+  position: fixed;
+  width: 300px;
+  height: 100%;
+  background: var(--blue);
+  border-left: 10px solid var(--blue);
+  transition: 0.4s;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav.active {
+  width: 80px;
+}
+
+.nav__list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.nav__item {
+  position: relative;
+  width: 100%;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.nav__item:hover,
+.nav__item.hovered {
+  background-color: var(--background);
+}
+
+.nav__item:nth-child(1) {
+  margin-bottom: 40px;
+  pointer-events: none;
+}
+
+.nav__link {
+  position: relative;
+  display: block;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: var(--background);
+  padding: 20px 0;
+}
+
+.nav__item:hover .nav__link,
+.nav__item.hovered .nav__link {
+  color: var(--blue);
+}
+
+.nav__icon {
+  position: relative;
+  display: block;
+  min-width: 60px;
+  text-align: center;
+}
+
+.nav__icon i {
+  font-size: 1.75rem;
+  font-weight: 300;
+}
+
+.nav__title {
+  position: relative;
+  display: block;
+  padding: 0 10px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.nav__item:hover .nav__link::before,
+.nav__item.hovered .nav__link::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: -50px;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border-radius: 50%;
+  box-shadow: 35px 35px 0 10px var(--background);
+  pointer-events: none;
+}
+
+.nav__item:hover .nav__link::after,
+.nav__item.hovered .nav__link::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -50px;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border-radius: 50%;
+  box-shadow: 35px -35px 0 10px var(--background);
+}
+
+/*-------------------------------- Container -------------------------------- */
+.container {
+  position: absolute;
+  width: calc(100% - 300px);
+  left: 300px;
+  min-height: 100vh;
+  background-color: var(--background);
+  transition: 0.5s;
+}
+
+.container.active {
+  width: calc(100% - 80px);
+  left: 80px;
+}
+
+/*-------------------------------- Topbar -------------------------------- */
+
+.topbar {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.topbar__toggle {
+  position: relative;
+  top: 0;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: var(--blue);
+}
+
+/*-------------------------------- Topbar Search -------------------------------- */
+
+.topbar__search {
+  position: relative;
+  width: 400px;
+  margin: 0 10px;
+}
+
+.topbar__search-label {
+  position: relative;
+  width: 100%;
+}
+
+.topbar__search-input {
+  width: 100%;
+  height: 40px;
+  border-radius: 40px;
+  padding: 5px 35px;
+  font-size: 18px;
+  outline: none;
+  border: 1px solid var(--text-2);
+}
+
+.topbar__search-icon {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/*-------------------------------- Topbar Avt/Theme -------------------------------- */
+
+.topbar__user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.topbar__user-avt {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.topbar__user-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.topbar__theme {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px var(--dark);
+}
+
+.change-theme {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  color: var(--blue);
+  cursor: pointer;
+}
+
+/*-------------------------------- Container Cards -------------------------------- */
+
+.container__cards {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+}
+
+.card {
+  position: relative;
+  background-color: var(--background);
+  padding: 30px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 0px 10px var(--box);
+}
+
+.card__numbers {
+  position: relative;
+  font-weight: 500;
+  font-size: 2.5em;
+  color: var(--blue);
+}
+
+.card__name {
+  color: var(--text-1);
+  font-size: 1.2em;
+  margin-top: 5px;
+}
+
+.card__icon {
+  font-size: 3.5em;
+  color: var(--text-2);
+}
+
+.card:hover {
+  background-color: var(--blue);
+}
+
+.card:hover .card__numbers,
+.card:hover .card__name,
+.card:hover .card__icon {
+  color: var(--background);
+}
+
+/*-------------------------------- Container Details -------------------------------- */
+
+.details {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 30px;
+  /* margin-top: 10px; */
+}
+
+/*-------------------------------- Container Detail Order -------------------------------- */
+
+.container__detail-order {
+  position: relative;
+  display: grid;
+  min-height: 500px;
+  background-color: var(--background);
+  padding: 20px;
+  box-shadow: 0 0px 10px var(--box);
+  border-radius: 20px;
+}
+
+.container__detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.section__title {
+  font-size: 1.5rem;
+  color: var(--blue);
+}
+
+.btn {
+  position: relative;
+  padding: 10px 16px;
+  background-color: var(--blue);
+  color: var(--background);
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.container__detail-order__table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.container__detail-table__title,
+.container__detail-table__subtitle {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.container__detail-table__subtitle {
+  padding: 0 8px;
+}
+
+.container__detail-table__title-name,
+.container__detail-table__title-price,
+.container__detail-table__title-payment,
+.container__detail-table__title-status {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: var(--dark);
+}
+
+.container__detail-table__title-price,
+.container__detail-table__title-payment,
+.container__detail-table__title-status {
+  text-align: right;
+}
+
+.container__detail-table__subtitle-name,
+.container__detail-table__subtitle-price,
+.container__detail-table__subtitle-payment,
+.container__detail-table__subtitle-status {
+  padding: 10px 0;
+  color: var(--dark);
+}
+
+.container__detail-table__subtitle-price,
+.container__detail-table__subtitle-payment,
+.container__detail-table__subtitle-status {
+  text-align: right;
+}
+
+.container__detail-table__subtitle:hover {
+  background-color: var(--blue);
+  color: var(--background);
+  border-radius: 10px;
+}
+
+.container__detail-table__subtitle:hover
+  .container__detail-table__subtitle-name,
+.container__detail-table__subtitle:hover
+  .container__detail-table__subtitle-price,
+.container__detail-table__subtitle:hover
+  .container__detail-table__subtitle-payment,
+.container__detail-table__subtitle:hover
+  .container__detail-table__subtitle-status {
+  color: var(--background);
+}
+
+.delivered {
+  background-color: #8de02c;
+  color: var(--background);
+  border-radius: 10px;
+  font-size: 1rem;
+  padding: 4px 8px;
+}
+
+.pending {
+  background-color: #f9ca3f;
+  color: var(--background);
+  border-radius: 10px;
+  font-size: 1rem;
+  padding: 4px 8px;
+}
+
+.return {
+  background-color: #f00;
+  color: var(--background);
+  border-radius: 10px;
+  font-size: 1rem;
+  padding: 4px 8px;
+}
+
+.progress {
+  background-color: #1795ce;
+  color: var(--background);
+  border-radius: 10px;
+  font-size: 1rem;
+  padding: 4px 8px;
+}
+
+/* New Customers */
+
+.container__detail-customer {
+  position: relative;
+  display: grid;
+  min-height: 500px;
+  padding: 20px;
+  background-color: var(--background);
+  box-shadow: 0 0px 10px var(--box);
+  border-radius: 20px;
+}
+
+.container__detail-customer__item {
+  display: flex;
+  align-items: center;
+}
+
+.container__detail-customer__item:hover {
+  background-color: var(--blue);
+  border-radius: 10px;
+}
+
+.container__detail-customer__item:hover .container__detail-customer__title,
+.container__detail-customer__item:hover .container__detail-customer__subtitle {
+  color: var(--background);
+}
+
+.container__detail-customer__avt {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 1.5rem;
+}
+
+.customer__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container__detail-customer__title {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-1);
+}
+
+.container__detail-customer__subtitle {
+  font-size: 0.8rem;
+  color: var(--text-2);
+}

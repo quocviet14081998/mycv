@@ -1,0 +1,161 @@
+:root {
+  --dark: #374151;
+  --darker: #1f2937;
+  --darkest: #111827;
+  --gray: #6b7280;
+  --light: #eee;
+  --pink: #ec4899;
+  --purple: #8b5cf6;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  background-image: linear-gradient(to right, red, pink, yellow);
+}
+
+.main {
+  background-color: var(--dark);
+  /* min-height: 100vh; */
+  margin: 0 auto;
+  max-width: 800px;
+  width: 100%;
+  border-radius: 1rem;
+  margin-top: 2rem;
+}
+
+header {
+  padding: 2rem 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  color: var(--gray);
+}
+
+#new__form {
+  display: flex;
+}
+
+input,
+button {
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+#new__form-input {
+  flex: 1 1 0%;
+  background-color: var(--darker);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-right: 1rem;
+  color: var(--light);
+  font-size: 1.25rem;
+}
+
+#new__form-input:placeholder {
+  color: var(--gray);
+}
+
+#new__form-submit {
+  color: var(--pink);
+  font-size: 1.25rem;
+  font-weight: 700;
+  background-image: linear-gradient(to right, var(--pink), var(--purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+#new__form-submit:hover {
+  opacity: 0.7;
+}
+
+#new__form-submit:active {
+  opacity: 0.5;
+}
+
+.container {
+  flex: 1 1 0%;
+}
+
+.task__list {
+  padding: 1rem;
+}
+
+.task__list h2 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: var(--gray);
+  margin-bottom: 1rem;
+}
+
+#tasks .task {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--darkest);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.content {
+  flex: 1 1 0%;
+}
+
+.text {
+  color: var(--light);
+  font-size: 1.25rem;
+  width: 100%;
+  display: block;
+  transition: 0.4s;
+}
+
+.text:not(:read-only) {
+  color: var(--pink);
+}
+
+.actions {
+  display: flex;
+  margin: 0 -0.5rem;
+}
+
+.actions button {
+  cursor: pointer;
+  margin: 0 0.5rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.4s;
+}
+
+.actions button:hover {
+  opacity: 0.7;
+}
+
+.actions button:active {
+  opacity: 0.5;
+}
+
+.actions .edit {
+  background-image: linear-gradient(to right, var(--pink), var(--purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.actions .delete {
+  color: crimson;
+}
