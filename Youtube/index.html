@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube</title>
+    <link rel="shortcut icon" href="./vendor/img/YouTube.ico" type="image/x-icon">
+    <!-- BOXICON -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./vendor/css/style.css">
+
+    <!-- RESPONSIVE -->
+    <link rel="stylesheet" href="./vendor/css/responsive.css">
+
+
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__nav">
+            <div class="header__menu">
+                <i class='bx bx-menu header__menu-icon'></i>
+                <div class="header__img">
+                    <a href="https://www.youtube.com/">
+                        <img src="./vendor/img/logo.png" alt="" class="header__logo" title="Trang chủ Youtube">
+                    </a>
+                </div>
+            </div>
+
+            <div class="header__searchs">
+                <div class="header__search">
+                    <input type="search" class="header__input" placeholder="Tìm Kiếm">
+                    <div class="header__search-icon">
+                        <i class='bx bxs-keyboard header__search-icon__keyboard'></i>
+                        <i class='bx bx-search header__search-icon__search' title="Tìm kiếm"></i>
+                    </div>
+                </div>
+                <i class='bx bxs-microphone header__search-icon__mic' title="Tìm kiếm bằng giọng nói"></i>
+            </div>
+
+            <div class="header__login">
+                <div class="header__grid">
+                    <i class='bx bxs-grid header__icon-grid'></i>
+                    <div class="header__small-grid">
+                        <span><i class='bx bxl-youtube'></i> YouTube TV</span>
+                        <span><i class='bx bxl-youtube'></i> Youtube Music</span>
+                        <span> YouTube Kids</span>
+                        <span><i class='bx bxl-youtube'></i> YouTube dành cho Nghệ sĩ</span>
+                    </div>
+                </div>
+
+                <div class="header__rounded">
+                    <i class='bx bx-dots-vertical-rounded header__icon-rounded' title="Cài đặt"></i>
+                    <div class="header__small-rounded">
+                        <div>
+                            <span><i class='bx bx-moon'></i> Giao diện: Sáng </span>
+                            <i class='bx bx-chevron-right header__icon-right'></i>
+                        </div>
+
+                        <div>
+                            <span><i class='bx bxl-youtube'></i> Ngôn ngữ: Tiếng Việt </span>
+                            <i class='bx bx-chevron-right header__icon-right'></i>
+                        </div>
+
+                        <div>
+                            <span><i class='bx bx-world'></i> Địa điểm: Việt Nam </span>
+                            <i class='bx bx-chevron-right header__icon-right'></i>
+                        </div>
+
+                        <div>
+                            <span><i class='bx bx-wrench'></i> Cài đặt</span>
+                        </div>
+
+                        <div><span><i class='bx bx-user'></i> Dữ liệu của bạn trong Youtube</span></div>
+                        <div><span><i class='bx bx-help-circle'></i> Trợ giúp</span></div>
+                        <div><span><i class='bx bx-error'></i> Gửi phản hồi</span></div>
+                        <div><span><i class='bx bxs-keyboard'></i> Phím tắt</span></div>
+
+                        <div>
+                            <span>Chế độ hạn chế: Đã tắt</span>
+                            <i class='bx bx-chevron-right header__icon-right'></i>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn">
+                    <i class='bx bx-user-circle header__icon-user'></i>
+                    <span class="header__user">Đăng nhập</span>
+                </button>
+            </div>
+
+            <div class="header__mobile">
+                <i class='bx bx-search header__icon-mobile'></i>
+                <i class='bx bx-user-circle header__icon-mobile header__icon-mobile__user'></i>
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- Container -->
+    <main class="main">
+
+        <div class="container">
+            <div class="container__navbar">
+                <div class="container__navbar-list">
+                    <a href="#" class="container__navbar-link">
+                        <i class='bx bxs-home container__navbar-icon'></i>
+                        <span class="container__navbar-name">Trang chủ</span>
+                    </a>
+
+                    <a href="#" class="container__navbar-link">
+                        <i class='bx bx-compass container__navbar-icon'></i>
+                        <span class="container__navbar-name">Khám phá</span>
+                    </a>
+
+                    <a href="#" class="container__navbar-link">
+                        <i class='bx bxs-videos container__navbar-icon'></i>
+                        <span class="container__navbar-name">Shorts</span>
+                    </a>
+
+                    <a href="#" class="container__navbar-link">
+                        <i class='bx bx-bell-plus container__navbar-icon'></i>
+                        <span class="container__navbar-name">Kênh đăng ký</span>
+                    </a>
+
+                    <a href="#" class="container__navbar-link">
+                        <i class='bx bx-library container__navbar-icon'></i>
+                        <span class="container__navbar-name">Thư viện</span>
+                    </a>
+
+                    <a href="#" class="container__navbar-link">
+                        <i class='bx bx-time container__navbar-icon'></i>
+                        <span class="container__navbar-name">Video đã xem</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="container__sidebar">
+                <div class="header__menu">
+                    <i class='bx bx-menu header__menu-icon-2'></i>
+                    <div class="header__img">
+                        <a href="https://www.youtube.com/">
+                            <img src="./vendor/img/logo.png" alt="" class="header__logo" title="Trang chủ Youtube">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="container__sidebar__list">
+                    <a href="#" class="container__sidebar__link active">
+                        <i class='bx bxs-home container__sidebar__icon'></i>
+                        <span class="container__sidebar__name">Trang chủ</span>
+                    </a>
+
+                    <a href="#" class="container__sidebar__link">
+                        <i class='bx bx-compass container__sidebar__icon'></i>
+                        <span class="container__sidebar__name">Khám phá</span>
+                    </a>
+
+                    <a href="#" class="container__sidebar__link">
+                        <i class='bx bxs-videos container__sidebar__icon'></i>
+                        <span class="container__sidebar__name">Shorts</span>
+                    </a>
+
+                    <a href="#" class="container__sidebar__link">
+                        <i class='bx bx-bell-plus container__sidebar__icon'></i>
+                        <span class="container__sidebar__name">Kênh đăng ký</span>
+                    </a>
+
+                    <a href="#" class="container__sidebar__link">
+                        <i class='bx bx-library container__sidebar__icon'></i>
+                        <span class="container__sidebar__name">Thư viện</span>
+                    </a>
+
+                    <a href="#" class="container__sidebar__link">
+                        <i class='bx bx-time container__sidebar__icon'></i>
+                        <span class="container__sidebar__name">Video đã xem</span>
+                    </a>
+
+                    <p>Hãy đăng nhập để thích video, bình luận và đăng ký kênh.</p>
+                    <button class="btn">
+                        <i class='bx bx-user-circle'></i>
+                        <span class="container__sidebar-name">Đăng nhập</span>
+                    </button>
+
+                    <h2 class="container__sidebar-h2">HAY NHẤT TRÊN YOUTUBE</h2>
+                    <a href="#" class="container__sidebar__link">
+                        <i class='bx bxs-music container__sidebar__icon container__sidebar__icon-good'></i>
+                        <span class="container__sidebar__name">Âm nhạc</span>
+                    </a>
+
+                    <a href="#" class="container__sidebar__link">
+                        <i class='bx bx-tennis-ball container__sidebar__icon container__sidebar__icon-good'></i>
+                        <span class="container__sidebar__name">Thể thao</span>
+                    </a>
+
+                    <a href="#" class="container__sidebar__link">
+                        <i class='bx bx-game container__sidebar__icon container__sidebar__icon-good'></i>
+                        <span class="container__sidebar__name">Trò chơi</span>
+                    </a>
+
+                    <a href="#" class="container__sidebar__link">
+                        <i class='bx bx-news container__sidebar__icon container__sidebar__icon-good'></i>
+                        <span class="container__sidebar__name">Tin tức</span>
+                    </a>
+
+                    <a href="#" class="container__sidebar__link">
+                        <i class='bx bx-calendar-event container__sidebar__icon container__sidebar__icon-good'></i>
+                        <span class="container__sidebar__name">Sự kiện trực tiếp</span>
+                    </a>
+
+                    <a href="#" class="container__sidebar__link">
+                        <i class='bx bx-video container__sidebar__icon container__sidebar__icon-good'></i>
+                        <span class="container__sidebar__name">Video 360</span>
+                    </a>
+
+                    <a href="#" class="container__sidebar__link">
+                        <i class='bx bx-plus-circle container__sidebar__icon container__sidebar__icon-seen'></i>
+                        <span class="container__sidebar__name">Xem qua các kênh</span>
+                    </a>
+
+                    <h2 class="container__sidebar-services">DỊCH VỤ KHÁC CỦA YOUTUBE</h2>
+
+                    <a href="#" class="container__sidebar__link">
+                        <i class='bx bx-calendar-event container__sidebar__icon'></i>
+                        <span class="container__sidebar__name">Sự kiện trực tiếp</span>
+                    </a>
+
+                    <a href="#" class="container__sidebar__link">
+                        <i class='bx bx-wrench container__sidebar__icon'></i>
+                        <span class="container__sidebar__name">Cài đặt</span>
+                    </a>
+
+                    <a href="#" class="container__sidebar__link">
+                        <i class='bx bx-history container__sidebar__icon'></i>
+                        <span class="container__sidebar__name">Lịch sử báo cáo</span>
+                    </a>
+
+                    <a href="#" class="container__sidebar__link">
+                        <i class='bx bx-help-circle container__sidebar__icon'></i>
+                        <span class="container__sidebar__name">Trợ giúp</span>
+                    </a>
+
+                    <a href="#" class="container__sidebar__link">
+                        <i class='bx bx-error container__sidebar__icon'></i>
+                        <span class="container__sidebar__name">Gửi phản hồi</span>
+                    </a>
+
+                    <p>
+                        <a href="#">Giới thiệu</a>
+                        <a href="#">Báo chí</a>
+                        <a href="#">Bản quyền</a>
+                        <a href="#">Liên hệ với chúng tôi</a>
+                        <a href="#">Người sáng tạo</a>
+                        <a href="#">Quảng cáo</a>
+                        <a href="#">Nhà phát triển</a>
+                        <br>
+                        <br>
+                        <a href="#">Điều khoản</a>
+                        <a href="#">Quyền riêng tư</a>
+                        <a href="#">Chính sách và an toàn</a>
+                        <a href="#">Cách YouTube hoạt động</a>
+                        <a href="#">Thử các tính năng mới</a>
+                    </p>
+
+                    <p>© 2022 Google LLC</p>
+                </div>
+            </div>
+
+
+            <div class="container__content">
+                <div class="container__content-header">
+                    <div>
+                        <button class="btn-content active">Tất cả</button>
+                        <button class="btn-content">Âm nhạc</button>
+                        <button class="btn-content">Phim hoạt hình</button>
+                        <button class="btn-content">Chương trình nấu ăn</button>
+                        <button class="btn-content">Trực tiếp</button>
+                        <button class="btn-content">Bóng đá</button>
+                        <button class="btn-content">Du lịch</button>
+                        <button class="btn-content">Thú Cưng</button>
+                        <button class="btn-content">Gareba Free Fire</button>
+                        <button class="btn-content">Ẩm Thực</button>
+                        <button class="btn-content">Hành Động</button>
+                        <button class="btn-content">Vui chơi & Giải trí</button>
+                        <button class="btn-content">Minecraft</button>
+                        <button class="btn-content">Mới tải lên gần đây</button>
+                    </div>
+                </div>
+                <div class="container__content-video">
+
+                    <div class="container__content-box">
+                        <div class="container__content-box__img">
+                            <img src="./vendor/img/dragon.png" alt="">
+                        </div>
+                        <div class="container__content-box__info">
+                            <div class="container__content-box__logo">
+                                <img src="./vendor/img/page_2.png" alt="">
+                            </div>
+                            <div class="container__rounded">
+                                <i class='bx bx-dots-vertical-rounded container__icon-rounded'></i>
+                                <div class="container__rounded-small">
+                                    <span><i class='bx bx-add-to-queue'></i>Thêm vào danh sách chờ</span>
+                                    <span><i class='bx bx-share-alt'></i>Chia sẻ</span>
+                                </div>
+                            </div>
+                            <div class="container__content-box__name">
+                                <span>
+                                    <p>
+                                        Giải đấu sức mạnh toàn vũ trụ Nhạc phim anime Goku vs jiren Dragon ball
+                                        super
+                                    </p>
+                                    <p>Dragon Ball</p>
+                                </span>
+                                <span>
+                                    <p>4 Tr lượt xem </p>
+                                    <i class='bx bxs-circle'></i>
+                                    <p>8 ngày trước</p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container__content-box">
+                        <div class="container__content-box__img">
+                            <img src="./vendor/img/msplm_2.jpg" alt="">
+                        </div>
+                        <div class="container__content-box__info">
+                            <div class="container__content-box__logo">
+                                <img src="./vendor/img/page_9.jpg" alt="">
+                            </div>
+                            <div class="container__rounded">
+                                <i class='bx bx-dots-vertical-rounded container__icon-rounded'></i>
+                                <div class="container__rounded-small">
+                                    <span><i class='bx bx-add-to-queue'></i>Thêm vào danh sách chờ</span>
+                                    <span><i class='bx bx-share-alt'></i>Chia sẻ</span>
+                                </div>
+                            </div>
+                            <div class="container__content-box__name">
+                                <span>
+                                    <p>
+                                        Marsupilami Thuyết Minh Tiếng Việt Tập 5 Tập 6 Tập 7 Tập 8
+                                    </p>
+                                    <p>Marsupilami</p>
+                                </span>
+                                <span>
+                                    <p>7 Tr lượt xem </p>
+                                    <i class='bx bxs-circle'></i>
+                                    <p>1 tháng trước</p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container__content-box">
+                        <div class="container__content-box__img">
+                            <img src="./vendor/img/doremon.png" alt="">
+                        </div>
+                        <div class="container__content-box__info">
+                            <div class="container__content-box__logo">
+                                <img src="./vendor/img/page.png" alt="">
+                            </div>
+                            <div class="container__rounded">
+                                <i class='bx bx-dots-vertical-rounded container__icon-rounded'></i>
+                                <div class="container__rounded-small">
+                                    <span><i class='bx bx-add-to-queue'></i>Thêm vào danh sách chờ</span>
+                                    <span><i class='bx bx-share-alt'></i>Chia sẻ</span>
+                                </div>
+                            </div>
+                            <div class="container__content-box__name">
+                                <span>
+                                    <p>
+                                        Doraemon - Tập 423 - Bồn Tắm Thức Ăn - Truy Tìm Kho Báu Núi Đầu Lâu - Hoạt
+                                        Hình
+                                        Tiếng Việt
+                                    </p>
+                                    <p>Doraemon</p>
+                                </span>
+                                <span>
+                                    <p>4,4 Tr lượt xem </p>
+                                    <i class='bx bxs-circle'></i>
+                                    <p>9 ngày trước</p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container__content-box">
+                        <div class="container__content-box__img">
+                            <img src="./vendor/img/dragon.jpg" alt="">
+                        </div>
+                        <div class="container__content-box__info">
+                            <div class="container__content-box__logo">
+                                <img src="./vendor/img/page_3.jpg" alt="">
+                            </div>
+                            <div class="container__rounded">
+                                <i class='bx bx-dots-vertical-rounded container__icon-rounded'></i>
+                                <div class="container__rounded-small">
+                                    <span><i class='bx bx-add-to-queue'></i>Thêm vào danh sách chờ</span>
+                                    <span><i class='bx bx-share-alt'></i>Chia sẻ</span>
+                                </div>
+                            </div>
+                            <div class="container__content-box__name">
+                                <span>
+                                    <p>
+                                        Dragon Ball Superclip 45 - Bảy Viên Ngọc Rồng - Phim Anime Nhật Bản Lồng
+                                        Tiếng Hay Kinh Điển
+                                    </p>
+                                    <p>Dragon Ball</p>
+                                </span>
+                                <span>
+                                    <p>5 Tr lượt xem </p>
+                                    <i class='bx bxs-circle'></i>
+                                    <p>10 ngày trước</p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container__content-box">
+                        <div class="container__content-box__img">
+                            <img src="./vendor/img/saitama.jpg" alt="">
+                        </div>
+                        <div class="container__content-box__info">
+                            <div class="container__content-box__logo">
+                                <img src="./vendor/img/page_4.jpg" alt="">
+                            </div>
+                            <div class="container__rounded">
+                                <i class='bx bx-dots-vertical-rounded container__icon-rounded'></i>
+                                <div class="container__rounded-small">
+                                    <span><i class='bx bx-add-to-queue'></i>Thêm vào danh sách chờ</span>
+                                    <span><i class='bx bx-share-alt'></i>Chia sẻ</span>
+                                </div>
+                            </div>
+                            <div class="container__content-box__name">
+                                <span>
+                                    <p>
+                                        TỔNG HỢP "Đấm phát chết luôn" | Season 1+2 | AL Anime
+                                    </p>
+                                    <p>Saitama</p>
+                                </span>
+                                <span>
+                                    <p>3 Tr lượt xem </p>
+                                    <i class='bx bxs-circle'></i>
+                                    <p>15 ngày trước</p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container__content-box">
+                        <div class="container__content-box__img">
+                            <img src="./vendor/img/dart.jpg" alt="">
+                        </div>
+                        <div class="container__content-box__info">
+                            <div class="container__content-box__logo">
+                                <img src="./vendor/img/page_5.png" alt="">
+                            </div>
+                            <div class="container__rounded">
+                                <i class='bx bx-dots-vertical-rounded container__icon-rounded'></i>
+                                <div class="container__rounded-small">
+                                    <span><i class='bx bx-add-to-queue'></i>Thêm vào danh sách chờ</span>
+                                    <span><i class='bx bx-share-alt'></i>Chia sẻ</span>
+                                </div>
+                            </div>
+                            <div class="container__content-box__name">
+                                <span>
+                                    <p>
+                                        Dấu ấn rồng thiêng : Truyền Thuyết Về Anh Hùng Abel Tập 1 Full Việt sub /
+                                        Dragon Quest Anime
+                                    </p>
+                                    <p>Anime</p>
+                                </span>
+                                <span>
+                                    <p>7 Tr lượt xem </p>
+                                    <i class='bx bxs-circle'></i>
+                                    <p>5 ngày trước</p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container__content-box">
+                        <div class="container__content-box__img">
+                            <img src="./vendor/img/tom.jpg" alt="">
+                        </div>
+                        <div class="container__content-box__info">
+                            <div class="container__content-box__logo">
+                                <img src="./vendor/img/page_7.jpg" alt="">
+                            </div>
+                            <div class="container__rounded">
+                                <i class='bx bx-dots-vertical-rounded container__icon-rounded'></i>
+                                <div class="container__rounded-small">
+                                    <span><i class='bx bx-add-to-queue'></i>Thêm vào danh sách chờ</span>
+                                    <span><i class='bx bx-share-alt'></i>Chia sẻ</span>
+                                </div>
+                            </div>
+                            <div class="container__content-box__name">
+                                <span>
+                                    <p>
+                                        Tom & Jerry Show 1975 - Những Cuộc Chiến Đấu Không Ngừng Nghỉ Của Cặp Đôi
+                                        Tom và Jerry
+                                    </p>
+                                    <p>Tom & Jerry</p>
+                                </span>
+                                <span>
+                                    <p>11 Tr lượt xem </p>
+                                    <i class='bx bxs-circle'></i>
+                                    <p>4 ngày trước</p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container__content-box">
+                        <div class="container__content-box__img">
+                            <img src="./vendor/img/larva.jpg" alt="">
+                        </div>
+                        <div class="container__content-box__info">
+                            <div class="container__content-box__logo">
+                                <img src="./vendor/img/page_6.jpg" alt="">
+                            </div>
+                            <div class="container__rounded">
+                                <i class='bx bx-dots-vertical-rounded container__icon-rounded'></i>
+                                <div class="container__rounded-small">
+                                    <span><i class='bx bx-add-to-queue'></i>Thêm vào danh sách chờ</span>
+                                    <span><i class='bx bx-share-alt'></i>Chia sẻ</span>
+                                </div>
+                            </div>
+                            <div class="container__content-box__name">
+                                <span>
+                                    <p>
+                                        Larva Tuba - QUÁI VẬT NHIỀU RĂNG - ẤU TRÙNG TINH NGHỊCH - PHIM HOẠT HÌNH
+                                        LARVA MỚI HAY NHẤT 2022
+                                    </p>
+                                    <p>Larva</p>
+                                </span>
+                                <span>
+                                    <p>5 Tr lượt xem </p>
+                                    <i class='bx bxs-circle'></i>
+                                    <p>19 ngày trước</p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container__content-box">
+                        <div class="container__content-box__img">
+                            <img src="./vendor/img/oggy_2.jpg" alt="">
+                        </div>
+                        <div class="container__content-box__info">
+                            <div class="container__content-box__logo">
+                                <img src="./vendor/img/page_8.jpg" alt="">
+                            </div>
+                            <div class="container__rounded">
+                                <i class='bx bx-dots-vertical-rounded container__icon-rounded'></i>
+                                <div class="container__rounded-small">
+                                    <span><i class='bx bx-add-to-queue'></i>Thêm vào danh sách chờ</span>
+                                    <span><i class='bx bx-share-alt'></i>Chia sẻ</span>
+                                </div>
+                            </div>
+                            <div class="container__content-box__name">
+                                <span>
+                                    <p>
+                                        Oggy and the Cockroaches RACING IN THE ARENA (SEASON 5) Full Episodes in HD
+                                    </p>
+                                    <p>OGGY</p>
+                                </span>
+                                <span>
+                                    <p>4 Tr lượt xem </p>
+                                    <i class='bx bxs-circle'></i>
+                                    <p>19 ngày trước</p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container__content-box">
+                        <div class="container__content-box__img">
+                            <img src="./vendor/img/tom_2.jpg" alt="">
+                        </div>
+                        <div class="container__content-box__info">
+                            <div class="container__content-box__logo">
+                                <img src="./vendor/img/page_7.jpg" alt="">
+                            </div>
+                            <div class="container__rounded">
+                                <i class='bx bx-dots-vertical-rounded container__icon-rounded'></i>
+                                <div class="container__rounded-small">
+                                    <span><i class='bx bx-add-to-queue'></i>Thêm vào danh sách chờ</span>
+                                    <span><i class='bx bx-share-alt'></i>Chia sẻ</span>
+                                </div>
+                            </div>
+                            <div class="container__content-box__name">
+                                <span>
+                                    <p>
+                                        Tom & Jerry Tables - Những Khoảnh Khắc Hài Hước Của Cặp Đôi Tom và Jerry
+                                    </p>
+                                    <p>Tom & Jerry</p>
+                                </span>
+                                <span>
+                                    <p>10 Tr lượt xem </p>
+                                    <i class='bx bxs-circle'></i>
+                                    <p>25 ngày trước</p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container__content-box">
+                        <div class="container__content-box__img">
+                            <img src="./vendor/img/oggy.jpg" alt="">
+                        </div>
+                        <div class="container__content-box__info">
+                            <div class="container__content-box__logo">
+                                <img src="./vendor/img/page_8.jpg" alt="">
+                            </div>
+                            <div class="container__rounded">
+                                <i class='bx bx-dots-vertical-rounded container__icon-rounded'></i>
+                                <div class="container__rounded-small">
+                                    <span><i class='bx bx-add-to-queue'></i>Thêm vào danh sách chờ</span>
+                                    <span><i class='bx bx-share-alt'></i>Chia sẻ</span>
+                                </div>
+                            </div>
+                            <div class="container__content-box__name">
+                                <span>
+                                    <p>
+                                        Oggy and the Cockroaches - THE DIRTY COCKROACHES (S03E36) Full Episodes in
+                                        HD
+                                    </p>
+                                    <p>OGGY</p>
+                                </span>
+                                <span>
+                                    <p>8 Tr lượt xem </p>
+                                    <i class='bx bxs-circle'></i>
+                                    <p>29 ngày trước</p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container__content-box">
+                        <div class="container__content-box__img">
+                            <img src="./vendor/img/msplm.jpg" alt="">
+                        </div>
+                        <div class="container__content-box__info">
+                            <div class="container__content-box__logo">
+                                <img src="./vendor/img/page_9.jpg" alt="">
+                            </div>
+                            <div class="container__rounded">
+                                <i class='bx bx-dots-vertical-rounded container__icon-rounded'></i>
+                                <div class="container__rounded-small">
+                                    <span><i class='bx bx-add-to-queue'></i>Thêm vào danh sách chờ</span>
+                                    <span><i class='bx bx-share-alt'></i>Chia sẻ</span>
+                                </div>
+                            </div>
+                            <div class="container__content-box__name">
+                                <span>
+                                    <p>
+                                        Marsupilami Thuyết Minh Tiếng Việt Tập 1 Tập 2 Tập 3 Tập 4
+                                    </p>
+                                    <p>Marsupilami</p>
+                                </span>
+                                <span>
+                                    <p>7 Tr lượt xem </p>
+                                    <i class='bx bxs-circle'></i>
+                                    <p>1 tháng trước</p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container__content-box">
+                        <div class="container__content-box__img">
+                            <img src="./vendor/img/pink.jpg" alt="">
+                        </div>
+                        <div class="container__content-box__info">
+                            <div class="container__content-box__logo">
+                                <img src="./vendor/img/page_10.png" alt="">
+                            </div>
+                            <div class="container__rounded">
+                                <i class='bx bx-dots-vertical-rounded container__icon-rounded'></i>
+                                <div class="container__rounded-small">
+                                    <span><i class='bx bx-add-to-queue'></i>Thêm vào danh sách chờ</span>
+                                    <span><i class='bx bx-share-alt'></i>Chia sẻ</span>
+                                </div>
+                            </div>
+                            <div class="container__content-box__name">
+                                <span>
+                                    <p>
+                                        Pink Panther Makes a Mess! | 35-Minute Compilation | Pink Panther and Pals
+                                    </p>
+                                    <p>Pink Panther</p>
+                                </span>
+                                <span>
+                                    <p>11 Tr lượt xem </p>
+                                    <i class='bx bxs-circle'></i>
+                                    <p>1 năm trước</p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container__content-box">
+                        <div class="container__content-box__img">
+                            <img src="./vendor/img/bean.jpg" alt="">
+                        </div>
+                        <div class="container__content-box__info">
+                            <div class="container__content-box__logo">
+                                <img src="./vendor/img/page_11.png" alt="">
+                            </div>
+                            <div class="container__rounded">
+                                <i class='bx bx-dots-vertical-rounded container__icon-rounded'></i>
+                                <div class="container__rounded-small">
+                                    <span><i class='bx bx-add-to-queue'></i>Thêm vào danh sách chờ</span>
+                                    <span><i class='bx bx-share-alt'></i>Chia sẻ</span>
+                                </div>
+                            </div>
+                            <div class="container__content-box__name">
+                                <span>
+                                    <p>
+
+                                        Mr Bean Cartoon: Episode 12 (Pizza Bean) | Mr Bean Episode | Mister Bean
+                                        Number 1 Fan in HD
+                                    </p>
+                                    <p>Mr Bean</p>
+                                </span>
+                                <span>
+                                    <p>4,4 Tr lượt xem </p>
+                                    <i class='bx bxs-circle'></i>
+                                    <p>9 ngày trước</p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+
+        <div class="container__mobile-menu">
+            <div>
+                <a href="#" class="container__mobile-link" id="container__mobile-link__home">
+                    <i class='bx bxs-home container__mobile-icon'></i>
+                    <span class="container__mobile-name">Trang chủ</span>
+                </a>
+                <a href="#" class="container__mobile-link">
+                    <i class='bx bxs-videos container__mobile-icon'></i>
+                    <span class="container__mobile-name">Shorts</span>
+                </a>
+                <a href="#" class="container__mobile-link" id="container__mobile-link__sub">
+                    <i class='bx bx-bell-plus container__mobile-icon '></i>
+                    <span class="container__mobile-name">Kênh đăng ký</span>
+                </a>
+
+                <a href="#" class="container__mobile-link" id="container__mobile-link__lib">
+                    <i class='bx bx-library container__mobile-icon'></i>
+                    <span class="container__mobile-name">Thư viện</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="container__mobile-lib">
+            <a href="#" class="container__mobile-lib__link">
+                <i class='bx bx-time container__mobile-lib__icon'></i>
+                <span class="container__mobile-lib__name">Video đã xem</span>
+            </a>
+
+            <a href="#" class="container__mobile-lib__link">
+                <i class='bx bx-video container__mobile-lib__icon'></i>
+                <span class="container__mobile-lib__name">Video của bạn</span>
+            </a>
+
+            <a href="#" class="container__mobile-lib__link">
+                <i class='bx bx-note container__mobile-lib__icon'></i>
+                <span class="container__mobile-lib__name">Phim của bạn</span>
+            </a>
+
+            <a href="#" class="container__mobile-lib__link">
+                <i class='bx bx-timer container__mobile-lib__icon'></i>
+                <span class="container__mobile-lib__name">Xem sau</span>
+            </a>
+
+            <ul class="container__mobile-lib__list">
+                <h3>Danh sách phát</h3>
+                <li class="container__mobile-lib__item">
+                    <div class="container__mobile-lib__item-img">
+                        <img src="./vendor/img/doremon.png" alt="">
+                    </div>
+                    <div class="container__mobile-lib__item-img__small">
+                        <div>
+                            <span>0</span>
+                            <i class='bx bxs-playlist'></i>
+                        </div>
+                    </div>
+                    <div class="container__mobile-lib__item-info">
+                        <span>Video đã thích</span>
+                        <span>User</span>
+                        <span>Có 1 video</span>
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+        </div>
+
+        <div class="container__mobile-sub">
+
+            <ul class="container__mobile-sub__list">
+                <h3>Danh sách đã đăng ký</h3>
+                <li class="container__mobile-sub__item">
+                    <div class="container__mobile-sub__item-img">
+                        <img src="./vendor/img/page.png" alt="">
+                    </div>
+                    <div class="container__mobile-sub__item-info">
+                        <div>
+                            <span>Tên kênh</span>
+                            <span>Lượt theo dỏi: 1N người</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+
+        </div>
+
+        <div class="container__mobile-user">
+            <div class="container__mobile-user__login">
+                <i class='bx bx-x container__mobile-user__close'></i>
+                <span>Tài khoản</span>
+            </div>
+            <div class="container__mobile-user__info">
+                <div class="container__mobile-user__info-img">
+                    <img src="./vendor/img/page.png" alt="">
+                    <div class="container__mobile-user__info-img__name">
+                        <span>User</span>
+                        <span><a href="" class="container__mobile-user-link">Quản lý Tài khoản Google của bạn</a></span>
+                    </div>
+                </div>
+                <ul class="container__mobile-user__info-list">
+                    <li class="container__mobile-user__info-item">
+                        <i class='bx bx-user-circle'></i>
+                        <span>Kênh của bạn</span>
+                    </li>
+
+                    <li class="container__mobile-user__info-item">
+                        <i class='bx bxs-user-account'></i>
+                        <span>Chuyển đổi tài khoản</span>
+                    </li>
+
+                    <li class="container__mobile-user__info-item">
+                        <i class='bx bx-dollar-circle'></i>
+                        <span>Giao dịch mua và gói thành viên</span>
+                    </li>
+
+                    <li class="container__mobile-user__info-item">
+                        <i class='bx bx-data'></i>
+                        <span>Dữ liệu của bạn trong Youtube</span>
+                    </li>
+
+                    <li class="container__mobile-user__info-item">
+                        <i class='bx bx-wrench'></i>
+                        <span>Cài đặt</span>
+                    </li>
+
+                    <li class="container__mobile-user__info-item">
+                        <i class='bx bx-help-circle'></i>
+                        <span>Trợ giúp</span>
+                    </li>
+
+                    <li class="container__mobile-user__info-item">
+                        <i class='bx bx-error'></i>
+                        <span>Phản hồi</span>
+                    </li>
+
+                    <li class="container__mobile-user__info-item">
+                        <i class='bx bxl-youtube'></i>
+                        <span>YouTube Studio</span>
+                    </li>
+
+                    <li class="container__mobile-user__info-item">
+                        <i class='bx bxl-youtube'></i>
+                        <span>YouTube Kids</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <script src="./vendor/js/script.js"></script>
+</body>
+
+</html>

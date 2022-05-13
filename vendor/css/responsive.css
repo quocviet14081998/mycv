@@ -32,12 +32,12 @@
   }
 
   .home__handle {
-    width: 150px;
-    height: 253px;
+    width: 200px;
+    height: 250px;
   }
 
   .home__img {
-    width: 130px;
+    width: 100%;
   }
 
   .about__info {
@@ -229,7 +229,7 @@
   }
 
   .contact__container {
-    grid-template-columns: repeat(2, max-content);
+    grid-template-columns: max-content;
     justify-content: center;
     column-gap: 3rem;
   }
@@ -244,7 +244,7 @@
 
   .home__handle {
     width: 290px;
-    height: 400px;
+    height: 380px;
   }
 
   .about__container {
@@ -258,6 +258,7 @@
   }
 
   .about__info {
+    grid-template-columns: repeat(3, 200px);
     column-gap: 2rem;
     justify-content: center;
   }
