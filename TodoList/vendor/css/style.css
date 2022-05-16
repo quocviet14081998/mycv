@@ -19,7 +19,7 @@ body {
   display: flex;
   flex-direction: column;
   color: #fff;
-  background-image: linear-gradient(to right, red, pink, yellow);
+  background-image: linear-gradient(to left, red, pink, yellow);
 }
 
 .main {
@@ -33,11 +33,11 @@ body {
 }
 
 header {
-  padding: 2rem 1rem;
+  padding: 1rem;
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 300;
   margin-bottom: 1rem;
   color: var(--gray);
@@ -78,6 +78,10 @@ button {
   -webkit-text-fill-color: transparent;
   cursor: pointer;
   transition: 0.4s;
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  width: 150px;
 }
 
 #new__form-submit:hover {
@@ -100,7 +104,7 @@ button {
   font-size: 1.5rem;
   font-weight: 300;
   color: var(--gray);
-  margin-bottom: 1rem;
+  margin: 1rem;
 }
 
 #tasks .task {

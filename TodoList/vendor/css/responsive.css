@@ -1,0 +1,59 @@
+@media screen and (max-width: 800px) {
+  .main {
+    max-width: 600px;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 799px) {
+  .main {
+    max-width: 400px;
+  }
+
+  #new__form {
+    flex-direction: column;
+  }
+
+  #new__form-submit {
+    margin-top: 1rem;
+  }
+
+  #new__form-input {
+    margin-right: 0;
+  }
+
+  .task__list h2 {
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+
+  #new__form-submit {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .main {
+    max-width: 300px;
+  }
+
+  #new__form {
+    flex-direction: column;
+  }
+
+  #new__form-submit {
+    margin-top: 1rem;
+  }
+
+  #new__form-input {
+    margin-right: 0;
+  }
+
+  .task__list h2 {
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+
+  #new__form-submit {
+    width: 100%;
+  }
+}
