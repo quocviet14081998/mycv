@@ -31,13 +31,13 @@
   /* ----------------Font & typography---------------- */
   --body-font: "Poppins", sans-serif;
   --biggest-font-size: 1.75rem;
-  --h1-font-size: 1.5rem;
-  --h2-font-size: 1.25rem;
-  --h3-font-size: 1rem;
-  --normal-font-size: 0.938rem;
-  --small-font-size: 0.813rem;
-  --smaller-font-size: 0.75rem;
-  --tiny-font-size: 0.625rem;
+  --h1-font-size: 2rem;
+  --h2-font-size: 1.5rem;
+  --h3-font-size: 1.25rem;
+  --normal-font-size: 1rem;
+  --small-font-size: 0.9375rem;
+  --smaller-font-size: 0.875rem;
+  --tiny-font-size: 0.75rem;
 
   /* ----------------Font Weight---------------- */
   --font-medium: 500;
@@ -538,6 +538,7 @@ body.light-theme {
 }
 
 .about__description {
+  text-align: justify;
   margin-bottom: 2rem;
 }
 
@@ -778,6 +779,7 @@ body.light-theme {
 
 .contact__info {
   display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
 }
 
