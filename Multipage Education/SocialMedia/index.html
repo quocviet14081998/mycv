@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media</title>
+
+    <!-- BOXICONS -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./vendor/css/style.css">
+
+    <!-- RESPONSIVE -->
+    <link rel="stylesheet" href="./vendor/css/responsieve.css">
+</head>
+
+<body>
+    <!---------------------- NavBar ---------------------->
+    <nav class="nav">
+        <div class="container">
+            <h2 class="nav__name">
+                nokoSocial
+            </h2>
+
+            <div class="search">
+                <i class='bx bx-search nav__icon'></i>
+                <input type="search" placeholder="Search forr creators, inspirations, and projects" class="input">
+            </div>
+
+            <div class="nav__create">
+                <label class="btn btn-primary" for="create-post">Create</label>
+                <div class="profile__photo">
+                    <img src="./vendor/img/profile-1.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!---------------------- Main ---------------------->
+
+    <main class="main">
+        <div class="container">
+            <!---------------------- Left ---------------------->
+
+            <div class="main__left">
+
+                <a href="#" class="main__left-profile">
+                    <div class="profile__photo">
+                        <img src="./vendor/img/profile-1.jpg" alt="" class="main__left-img">
+                    </div>
+                    <div class="main__left-handle">
+                        <h4 class="main__left__name">Diana Ayi</h4>
+                        <p class="text-muted">
+                            @day i
+                        </p>
+                    </div>
+                </a>
+
+                <!---------------------- SideBar ---------------------->
+
+
+                <div class="main__left-sidebar">
+                    <a class="main__left-menu__item active">
+                        <span><i class='bx bx-home main__left-icon'></i></span>
+                        <h3 class="main__left-item__name">Home</h3>
+                    </a>
+
+                    <a class="main__left-menu__item">
+                        <span><i class='bx bx-compass main__left-icon'></i></span>
+                        <h3 class="main__left-item__name">Explore</h3>
+                    </a>
+
+                    <a class="main__left-menu__item" id="notification">
+                        <span><i class="bx bx-bell main__left-icon"> <small class="notification__count">9+</small>
+                            </i></span>
+                        <h3 class="main__left-item__name">Notifications</h3>
+
+                        <!---------------------- Notification Popup ---------------------->
+                        <div class="notifications__popup">
+                            <div>
+                                <div class="profile__photo">
+                                    <img src="./vendor/img/profile-2.jpg" alt="">
+                                </div>
+                                <div class="notification__body">
+                                    <b>KeKe Benjamin</b> accepted your friend request
+                                    <small class="text-muted">2 DAYS AGO</small>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="profile__photo">
+                                    <img src="./vendor/img/profile-3.jpg" alt="">
+                                </div>
+                                <div class="notification__body">
+                                    <b>John Doe</b> commented on your post
+                                    <small class="text-muted">1 HOUR AGO</small>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="profile__photo">
+                                    <img src="./vendor/img/profile-4.jpg" alt="">
+                                </div>
+                                <div class="notification__body">
+                                    <b>Mary Oppong</b> and <b>283 other </b> liked your post
+                                    <small class="text-muted">4 MINUTES AGO</small>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="profile__photo">
+                                    <img src="./vendor/img/profile-5.jpg" alt="">
+                                </div>
+                                <div class="notification__body">
+                                    <b>Doris Y.Lartey</b> commented on a post you are tagged in
+                                    <small class="text-muted">2 DAYS AGO</small>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="profile__photo">
+                                    <img src="./vendor/img/profile-6.jpg" alt="">
+                                </div>
+                                <div class="notification__body">
+                                    <b>Donald Trump</b> commented on a post you are tagged in
+                                    <small class="text-muted">1 HOUR AGO</small>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="profile__photo">
+                                    <img src="./vendor/img/profile-7.jpg" alt="">
+                                </div>
+                                <div class="notification__body">
+                                    <b>Jane Doe</b> commented on a post
+                                    <small class="text-muted">1 HOUR AGO</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!---------------------- End Notification Popup ---------------------->
+
+                    </a>
+
+                    <a class="main__left-menu__item" id="message__notification">
+                        <span><i class="bx bx-envelope main__left-icon"> <small class="notification__count">6</small>
+                            </i></span>
+                        <h3 class="main__left-item__name">Message</h3>
+                    </a>
+
+                    <a class="main__left-menu__item">
+                        <span><i class="bx bx-bookmark main__left-icon"></i></span>
+                        <h3 class="main__left-item__name">Bookmarks</h3>
+                    </a>
+
+                    <a class="main__left-menu__item">
+                        <span><i class='bx bx-line-chart main__left-icon'></i></span>
+                        <h3 class="main__left-item__name">Analytics</h3>
+                    </a>
+
+                    <a class="main__left-menu__item" id="theme">
+                        <span><i class='bx bxs-palette main__left-icon'></i></span>
+                        <h3 class="main__left-item__name">Theme</h3>
+                    </a>
+
+                    <a class="main__left-menu__item">
+                        <span><i class='bx bx-wrench main__left-icon'></i></span>
+                        <h3 class="main__left-item__name">Setting</h3>
+                    </a>
+                </div>
+
+                <!---------------------- End SideBar ---------------------->
+
+                <label for="create-post" class="btn btn-primary">Create Post</label>
+
+            </div>
+
+            <!---------------------- Middle ---------------------->
+
+            <div class="main__middle">
+
+                <!---------------------- Middle Stories ---------------------->
+                <div class="main__middle-stories">
+
+                    <div class="main__middle-story">
+                        <div class="profile__photo">
+                            <img src="./vendor/img/profile-8.jpg" alt="">
+                        </div>
+                        <p class="main__middle-name">Your Story</p>
+                    </div>
+
+                    <div class="main__middle-story">
+                        <div class="profile__photo">
+                            <img src="./vendor/img/profile-9.jpg" alt="">
+                        </div>
+                        <p class="main__middle-name">Lilla James</p>
+                    </div>
+
+                    <div class="main__middle-story">
+                        <div class="profile__photo">
+                            <img src="./vendor/img/profile-10.jpg" alt="">
+                        </div>
+                        <p class="main__middle-name">Winnie Hale</p>
+                    </div>
+
+                    <div class="main__middle-story">
+                        <div class="profile__photo">
+                            <img src="./vendor/img/profile-11.jpg" alt="">
+                        </div>
+                        <p class="main__middle-name">Daniel Bale</p>
+                    </div>
+
+                    <div class="main__middle-story">
+                        <div class="profile__photo">
+                            <img src="./vendor/img/profile-12.jpg" alt="">
+                        </div>
+                        <p class="main__middle-name">Jane Doe</p>
+                    </div>
+
+                    <div class="main__middle-story">
+                        <div class="profile__photo">
+                            <img src="./vendor/img/profile-8.jpg" alt="">
+                        </div>
+                        <p class="main__middle-name">Tina White</p>
+                    </div>
+
+                </div>
+
+                <!---------------------- Middle Create Post ---------------------->
+                <form class="main__middle-create__post">
+                    <div class="profile__photo">
+                        <img src="./vendor/img/profile-1.jpg" alt="">
+                    </div>
+                    <input type="text" placeholder="What's on your mind, Diana?" id="create__post"
+                        class="main__middle-create__post-input">
+                    <input type="submit" value="Post" class="btn btn-primary">
+                </form>
+
+                <!---------------------- Middle Feeds ---------------------->
+                <div class="main__middle-feeds">
+
+                    <!---------------------- Feed 1 ---------------------->
+                    <div class="main__middle-feed">
+                        <div class="middle__feed-head">
+                            <div class="middle__feed-head__user">
+                                <div class="profile__photo">
+                                    <img src="./vendor/img/profile-13.jpg" alt="">
+                                </div>
+                                <div class="middle__feed-head__info">
+                                    <h3>Lana Rose</h3>
+                                    <small>Dubai, 15 MINUTES AGO</small>
+                                </div>
+                            </div>
+                            <span class="middle__feed-head__edit">
+                                <i class='bx bx-dots-horizontal-rounded'></i>
+                            </span>
+                        </div>
+                        <div class="middle__feed-photo">
+                            <img src="./vendor/img/feed-1.jpg" alt="">
+                        </div>
+
+                        <div class="main__middle-action__buttons">
+                            <div class="middle-action__interaction-buttons">
+                                <span><i class='bx bxs-heart'></i></span>
+                                <span><i class='bx bx-comment-dots'></i></i></span>
+                                <span><i class='bx bx-share-alt'></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class='bx bx-bookmark'></i></span>
+                            </div>
+                        </div>
+
+                        <div class="main__middle-liked__by">
+                            <span><img src="./vendor/img/profile-10.jpg" alt=""></span>
+                            <span><img src="./vendor/img/profile-4.jpg" alt=""></span>
+                            <span><img src="./vendor/img/profile-5.jpg" alt=""></span>
+                            <p>Liked by <b>Ernest Achiever</b> and <b>2,323 others</b> </p>
+                        </div>
+
+                        <div class="main__middle-caption">
+                            <p> <b>Lana Rose</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                <span class="harsh-tag">#lifestyle</span>
+                            </p>
+                        </div>
+                        <div class="comments text-muted">View all 277 comments</div>
+                    </div>
+
+                    <!---------------------- Feed 2 ---------------------->
+                    <div class="main__middle-feed">
+                        <div class="middle__feed-head">
+                            <div class="middle__feed-head__user">
+                                <div class="profile__photo">
+                                    <img src="./vendor/img/profile-13.jpg" alt="">
+                                </div>
+                                <div class="middle__feed-head__info">
+                                    <h3>Lana Rose</h3>
+                                    <small>Dubai, 15 MINUTES AGO</small>
+                                </div>
+                            </div>
+                            <span class="middle__feed-head__edit">
+                                <i class='bx bx-dots-horizontal-rounded'></i>
+                            </span>
+                        </div>
+                        <div class="middle__feed-photo">
+                            <img src="./vendor/img/feed-1.jpg" alt="">
+                        </div>
+
+                        <div class="main__middle-action__buttons">
+                            <div class="middle-action__interaction-buttons">
+                                <span><i class='bx bxs-heart toggle__heart'></i></span>
+                                <span><i class='bx bx-comment-dots'></i></i></span>
+                                <span><i class='bx bx-share-alt'></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class='bx bx-bookmark'></i></span>
+                            </div>
+                        </div>
+
+                        <div class="main__middle-liked__by">
+                            <span><img src="./vendor/img/profile-10.jpg" alt=""></span>
+                            <span><img src="./vendor/img/profile-4.jpg" alt=""></span>
+                            <span><img src="./vendor/img/profile-5.jpg" alt=""></span>
+                            <p>Liked by <b>Ernest Achiever</b> and <b>2,323 others</b> </p>
+                        </div>
+
+                        <div class="caption">
+                            <p> <b>Lana Rose</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                <span class="harsh-tag">#lifestyle</span>
+                            </p>
+                        </div>
+                        <div class="comments text-muted">View all 277 comments</div>
+                    </div>
+
+                    <!---------------------- Feed 3 ---------------------->
+                    <div class="main__middle-feed">
+                        <div class="middle__feed-head">
+                            <div class="middle__feed-head__user">
+                                <div class="profile__photo">
+                                    <img src="./vendor/img/profile-13.jpg" alt="">
+                                </div>
+                                <div class="middle__feed-head__info">
+                                    <h3>Lana Rose</h3>
+                                    <small>Dubai, 15 MINUTES AGO</small>
+                                </div>
+                            </div>
+                            <span class="middle__feed-head__edit">
+                                <i class='bx bx-dots-horizontal-rounded'></i>
+                            </span>
+                        </div>
+                        <div class="middle__feed-photo">
+                            <img src="./vendor/img/feed-1.jpg" alt="">
+                        </div>
+
+                        <div class="main__middle-action__buttons">
+                            <div class="middle-action__interaction-buttons">
+                                <span><i class='bx bxs-heart toggle__heart'></i></span>
+                                <span><i class='bx bx-comment-dots'></i></i></span>
+                                <span><i class='bx bx-share-alt'></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class='bx bx-bookmark'></i></span>
+                            </div>
+                        </div>
+
+                        <div class="main__middle-liked__by">
+                            <span><img src="./vendor/img/profile-10.jpg" alt=""></span>
+                            <span><img src="./vendor/img/profile-4.jpg" alt=""></span>
+                            <span><img src="./vendor/img/profile-5.jpg" alt=""></span>
+                            <p>Liked by <b>Ernest Achiever</b> and <b>2,323 others</b> </p>
+                        </div>
+
+                        <div class="caption">
+                            <p> <b>Lana Rose</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                <span class="harsh-tag">#lifestyle</span>
+                            </p>
+                        </div>
+                        <div class="comments text-muted">View all 277 comments</div>
+                    </div>
+
+                    <!---------------------- Feed 4 ---------------------->
+                    <div class="main__middle-feed">
+                        <div class="middle__feed-head">
+                            <div class="middle__feed-head__user">
+                                <div class="profile__photo">
+                                    <img src="./vendor/img/profile-13.jpg" alt="">
+                                </div>
+                                <div class="middle__feed-head__info">
+                                    <h3>Lana Rose</h3>
+                                    <small>Dubai, 15 MINUTES AGO</small>
+                                </div>
+                            </div>
+                            <span class="middle__feed-head__edit">
+                                <i class='bx bx-dots-horizontal-rounded'></i>
+                            </span>
+                        </div>
+                        <div class="middle__feed-photo">
+                            <img src="./vendor/img/feed-1.jpg" alt="">
+                        </div>
+
+                        <div class="main__middle-action__buttons">
+                            <div class="middle-action__interaction-buttons">
+                                <span><i class='bx bxs-heart toggle__heart'></i></span>
+                                <span><i class='bx bx-comment-dots'></i></i></span>
+                                <span><i class='bx bx-share-alt'></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class='bx bx-bookmark'></i></span>
+                            </div>
+                        </div>
+
+                        <div class="main__middle-liked__by">
+                            <span><img src="./vendor/img/profile-10.jpg" alt=""></span>
+                            <span><img src="./vendor/img/profile-4.jpg" alt=""></span>
+                            <span><img src="./vendor/img/profile-5.jpg" alt=""></span>
+                            <p>Liked by <b>Ernest Achiever</b> and <b>2,323 others</b> </p>
+                        </div>
+
+                        <div class="caption">
+                            <p> <b>Lana Rose</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                <span class="harsh-tag">#lifestyle</span>
+                            </p>
+                        </div>
+                        <div class="comments text-muted">View all 277 comments</div>
+                    </div>
+
+                    <!---------------------- Feed 5 ---------------------->
+                    <div class="main__middle-feed">
+                        <div class="middle__feed-head">
+                            <div class="middle__feed-head__user">
+                                <div class="profile__photo">
+                                    <img src="./vendor/img/profile-13.jpg" alt="">
+                                </div>
+                                <div class="middle__feed-head__info">
+                                    <h3>Lana Rose</h3>
+                                    <small>Dubai, 15 MINUTES AGO</small>
+                                </div>
+                            </div>
+                            <span class="middle__feed-head__edit">
+                                <i class='bx bx-dots-horizontal-rounded'></i>
+                            </span>
+                        </div>
+                        <div class="middle__feed-photo">
+                            <img src="./vendor/img/feed-1.jpg" alt="">
+                        </div>
+
+                        <div class="main__middle-action__buttons">
+                            <div class="middle-action__interaction-buttons">
+                                <span><i class='bx bxs-heart toggle__heart'></i></span>
+                                <span><i class='bx bx-comment-dots'></i></i></span>
+                                <span><i class='bx bx-share-alt'></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class='bx bx-bookmark'></i></span>
+                            </div>
+                        </div>
+
+                        <div class="main__middle-liked__by">
+                            <span><img src="./vendor/img/profile-10.jpg" alt=""></span>
+                            <span><img src="./vendor/img/profile-4.jpg" alt=""></span>
+                            <span><img src="./vendor/img/profile-5.jpg" alt=""></span>
+                            <p>Liked by <b>Ernest Achiever</b> and <b>2,323 others</b> </p>
+                        </div>
+
+                        <div class="caption">
+                            <p> <b>Lana Rose</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                <span class="harsh-tag">#lifestyle</span>
+                            </p>
+                        </div>
+                        <div class="comments text-muted">View all 277 comments</div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!---------------------- Right ---------------------->
+
+            <div class="main__right">
+                <!---------------------- Message ---------------------->
+                <div class="main__right-messages">
+                    <div class="right__message-heading">
+                        <h4 class="right__message-name">Message</h4>
+                        <i class='bx bx-edit right__message-icon'></i>
+                    </div>
+                    <!---------------------- Search Bar ---------------------->
+                    <div class="search">
+                        <i class='bx bx-search'></i>
+                        <input type="search" placeholder="Search Message" id="message__search" class="input">
+                    </div>
+                    <!---------------------- Message category ---------------------->
+                    <div class="main__right-category">
+                        <h6 class="active main__right-name">Primary</h6>
+                        <h6 class="main__right-name">General</h6>
+                        <h6 class="main__right-requets main__right-name">Requests(7)</h6>
+                    </div>
+
+                    <!---------------------- Message 1 ---------------------->
+                    <div class="main__right-message">
+                        <div class="profile__photo">
+                            <img src="./vendor/img/profile-17.jpg" alt="">
+                        </div>
+                        <div class="main__right-message__body">
+                            <h5 class="right__message-body__name">Edem Quist</h5>
+                            <p class="text-muted">Just woke up bruh</p>
+                        </div>
+                    </div>
+
+                    <!---------------------- Message 2 ---------------------->
+                    <div class="main__right-message">
+                        <div class="profile__photo">
+                            <img src="./vendor/img/profile-5.jpg" alt="">
+                            <div class="active"></div>
+                        </div>
+                        <div class="main__right-message__body">
+                            <h5 class="right__message-body__name">Franca Deila</h5>
+                            <p class="text-bold">Received bruh. Thanks!</p>
+                        </div>
+                    </div>
+
+                    <!---------------------- Message 3 ---------------------->
+                    <div class="main__right-message">
+                        <div class="profile__photo">
+                            <img src="./vendor/img/profile-3.jpg" alt="">
+                        </div>
+                        <div class="main__right-message__body">
+                            <h5 class="right__message-body__name">Jane Doe</h5>
+                            <p class="text-bold">ok</p>
+                        </div>
+                    </div>
+
+                    <!---------------------- Message 4 ---------------------->
+                    <div class="main__right-message">
+                        <div class="profile__photo">
+                            <img src="./vendor/img/profile-14.jpg" alt="">
+                        </div>
+                        <div class="main__right-message__body">
+                            <h5 class="right__message-body__name">Daniella Jackson</h5>
+                            <p class="text-bold">2 new messages</p>
+                        </div>
+                    </div>
+
+                    <!---------------------- Message 5 ---------------------->
+                    <div class="main__right-message">
+                        <div class="profile__photo">
+                            <img src="./vendor/img/profile-15.jpg" alt="">
+                        </div>
+                        <div class="main__right-message__body">
+                            <h5 class="right__message-body__name">Juilet Makarey</h5>
+                            <p class="text-muted">lol u right</p>
+                        </div>
+                    </div>
+
+                    <!---------------------- Message 6 ---------------------->
+                    <div class="main__right-message">
+                        <div class="profile__photo">
+                            <img src="./vendor/img/profile-7.jpg" alt="">
+                            <div class="active"></div>
+                        </div>
+                        <div class="main__right-message__body">
+                            <h5 class="right__message-body__name">Chantel Mssiza</h5>
+                            <p class="text-bold">Birthday Tomorrrow!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!---------------------- Friends Requets ---------------------->
+                <div class="main__right-friend__requests">
+                    <h4 class="right__friend-requests__name">Requests</h4>
+
+                    <div class="right__friend-request">
+                        <div class="right__friend-request__info">
+                            <div class="profile__photo">
+                                <img src="./vendor/img/profile-13.jpg" alt="">
+                            </div>
+                            <div>
+                                <h5 class="right__friend-request__name">Hajia Bintu</h5>
+                                <p class="text-muted">
+                                    8 mutual friends
+                                </p>
+                            </div>
+                        </div>
+                        <div class="right__friend-request__action">
+                            <button class="btn btn-primary">
+                                Accept
+                            </button>
+                            <button class="btn">
+                                Deline
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="right__friend-request">
+                        <div class="right__friend-request__info">
+                            <div class="profile__photo">
+                                <img src="./vendor/img/profile-9.jpg" alt="">
+                            </div>
+                            <div>
+                                <h5 class="right__friend-request__name">Jackline Mensah</h5>
+                                <p class="text-muted">
+                                    2 mutual friends
+                                </p>
+                            </div>
+                        </div>
+                        <div class="right__friend-request__action">
+                            <button class="btn btn-primary">
+                                Accept
+                            </button>
+                            <button class="btn">
+                                Deline
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="right__friend-request">
+                        <div class="right__friend-request__info">
+                            <div class="profile__photo">
+                                <img src="./vendor/img/profile-10.jpg" alt="">
+                            </div>
+                            <div>
+                                <h5 class="right__friend-request__name">jenifer Lawreence</h5>
+                                <p class="text-muted">
+                                    19 mutual friends
+                                </p>
+                            </div>
+                        </div>
+                        <div class="right__friend-request__action">
+                            <button class="btn btn-primary">
+                                Accept
+                            </button>
+                            <button class="btn">
+                                Deline
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <div class="customize__theme">
+        <div class="theme__card">
+            <h2>Customize your view</h2>
+            <p class="text-muted">Manager your font size, color, and background.</p>
+
+            <!-- Font Sizes -->
+            <div class="theme__font-size">
+                <h4>Font Size</h4>
+                <div>
+                    <h6>Aa</h6>
+                    <div class="choose__size">
+                        <span class="font__size-1 "></span>
+                        <span class="font__size-2"></span>
+                        <span class="font__size-3 active"></span>
+                        <span class="font__size-4"></span>
+                        <span class="font__size-5"></span>
+                    </div>
+                    <h3>Aa</h3>
+                </div>
+            </div>
+
+            <!-- Primary Colors -->
+            <div class="theme__color">
+                <h4>Color</h4>
+                <div class="choose__color">
+                    <span class="color__1 active"></span>
+                    <span class="color__2"></span>
+                    <span class="color__3"></span>
+                    <span class="color__4"></span>
+                    <span class="color__5"></span>
+                </div>
+            </div>
+
+            <!-- Background Colors -->
+            <div class="theme__background">
+                <h4>Background</h4>
+                <div class="choose__bg">
+                    <div class="bg__1 active">
+                        <span></span>
+                        <h5 for="bg__1">Light</h5>
+                    </div>
+                    <div class="bg__2">
+                        <span></span>
+                        <h5>Dim</h5>
+                    </div>
+                    <div class="bg__3">
+                        <span></span>
+                        <h5 for="bg__3">Lights Out</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="./vendor/js/script.js"></script>
+</body>
+
+</html>
